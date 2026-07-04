@@ -1,0 +1,520 @@
+{
+  "region": "Chihuahua y estados vecinos (Sonora, Coahuila, Nuevo León)",
+  "origins": [
+    "Chihuahua",
+    "Ciudad Juarez",
+    "Monterrey",
+    "Nogales",
+    "Agua Prieta",
+    "Cananea",
+    "Hermosillo",
+    "Guaymas",
+    "Empalme",
+    "Cd. Obregón",
+    "Navojoa",
+    "Nvo. Casas Grandes",
+    "Cuauhtémoc",
+    "Ojinaga",
+    "Delicias",
+    "Jiménez",
+    "Parral",
+    "Cd. Acuña",
+    "Piedras Negras",
+    "Sabinas",
+    "Monclova",
+    "Ramos Arizpe"
+  ],
+  "destinations": [
+    "Laredo",
+    "Torreon",
+    "Saltillo",
+    "Nogales",
+    "Agua Prieta",
+    "Cananea",
+    "Hermosillo",
+    "Guaymas",
+    "Empalme",
+    "Cd. Obregón",
+    "Navojoa",
+    "Nvo. Casas Grandes",
+    "Cuauhtémoc",
+    "Ojinaga",
+    "Delicias",
+    "Jiménez",
+    "Parral",
+    "Cd. Acuña",
+    "Piedras Negras",
+    "Sabinas",
+    "Monclova",
+    "Ramos Arizpe"
+  ],
+  "slug_map": {
+    "Monterrey": "monterrey",
+    "Ciudad Juarez": "ciudad_juarez",
+    "Chihuahua": "chihuahua",
+    "Laredo": "laredo",
+    "Torreon": "torreon",
+    "Saltillo": "saltillo",
+    "Nogales": "nogales",
+    "Agua Prieta": "agua_prieta",
+    "Cananea": "cananea",
+    "Hermosillo": "hermosillo",
+    "Guaymas": "guaymas",
+    "Empalme": "empalme",
+    "Cd. Obregón": "cd_obregon",
+    "Navojoa": "navojoa",
+    "Nvo. Casas Grandes": "nuevo_casas_grandes",
+    "Cuauhtémoc": "cuauhtemoc",
+    "Ojinaga": "ojinaga",
+    "Delicias": "delicias",
+    "Jiménez": "jimenez",
+    "Parral": "parral",
+    "Cd. Acuña": "cd_acuna",
+    "Piedras Negras": "piedras_negras",
+    "Sabinas": "sabinas",
+    "Monclova": "monclova",
+    "Ramos Arizpe": "ramos_arizpe"
+  },
+  "states": {
+    "SON": {
+      "name": "Sonora",
+      "color": "#d98b3a"
+    },
+    "CHI": {
+      "name": "Chihuahua",
+      "color": "#7fbf5c"
+    },
+    "COA": {
+      "name": "Coahuila",
+      "color": "#3aa3ad"
+    },
+    "NL": {
+      "name": "Nuevo León",
+      "color": "#f3b13c"
+    },
+    "USA": {
+      "name": "Frontera (Laredo)",
+      "color": "#4ad8e3"
+    }
+  },
+  "map_bounds": {
+    "south": 25.2,
+    "west": -111.5,
+    "north": 32.0,
+    "east": -98.8
+  },
+  "map_center": {
+    "lat": 28.9,
+    "lng": -105.2,
+    "zoom": 6
+  },
+  "nodes": [
+    {
+      "id": "nogales",
+      "name": "Nogales",
+      "state": "SON",
+      "role": "destination",
+      "major": true,
+      "lat": 31.3087,
+      "lng": -110.9429,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "agua_prieta",
+      "name": "Agua Prieta",
+      "state": "SON",
+      "role": "destination",
+      "major": false,
+      "lat": 31.3277,
+      "lng": -109.5488,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "cananea",
+      "name": "Cananea",
+      "state": "SON",
+      "role": "destination",
+      "major": false,
+      "lat": 30.9869,
+      "lng": -110.2906,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "hermosillo",
+      "name": "Hermosillo",
+      "state": "SON",
+      "role": "destination",
+      "major": true,
+      "lat": 29.0892,
+      "lng": -110.9613,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "guaymas",
+      "name": "Guaymas",
+      "state": "SON",
+      "role": "destination",
+      "major": false,
+      "lat": 27.9193,
+      "lng": -110.8974,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "empalme",
+      "name": "Empalme",
+      "state": "SON",
+      "role": "destination",
+      "major": true,
+      "lat": 27.9614,
+      "lng": -110.8147,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "cd_obregon",
+      "name": "Cd. Obregón",
+      "state": "SON",
+      "role": "destination",
+      "major": false,
+      "lat": 27.4824,
+      "lng": -109.9312,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "navojoa",
+      "name": "Navojoa",
+      "state": "SON",
+      "role": "destination",
+      "major": false,
+      "lat": 27.0854,
+      "lng": -109.4439,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "ciudad_juarez",
+      "name": "Ciudad Juárez",
+      "state": "CHI",
+      "role": "origin",
+      "major": true,
+      "lat": 31.6904,
+      "lng": -106.4245,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "nuevo_casas_grandes",
+      "name": "Nvo. Casas Grandes",
+      "state": "CHI",
+      "role": "destination",
+      "major": true,
+      "lat": 30.4153,
+      "lng": -107.9117,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "cuauhtemoc",
+      "name": "Cuauhtémoc",
+      "state": "CHI",
+      "role": "destination",
+      "major": false,
+      "lat": 28.4064,
+      "lng": -106.8653,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "chihuahua",
+      "name": "Chihuahua",
+      "state": "CHI",
+      "role": "origin",
+      "major": true,
+      "lat": 28.6353,
+      "lng": -106.0889,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "ojinaga",
+      "name": "Ojinaga",
+      "state": "CHI",
+      "role": "destination",
+      "major": false,
+      "lat": 29.5646,
+      "lng": -104.4153,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "delicias",
+      "name": "Delicias",
+      "state": "CHI",
+      "role": "destination",
+      "major": false,
+      "lat": 28.1931,
+      "lng": -105.4717,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "jimenez",
+      "name": "Jiménez",
+      "state": "CHI",
+      "role": "destination",
+      "major": false,
+      "lat": 28.3319,
+      "lng": -105.4,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "parral",
+      "name": "Parral",
+      "state": "CHI",
+      "role": "destination",
+      "major": false,
+      "lat": 26.93,
+      "lng": -105.6664,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "cd_acuna",
+      "name": "Cd. Acuña",
+      "state": "COA",
+      "role": "destination",
+      "major": false,
+      "lat": 29.3236,
+      "lng": -100.9514,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "piedras_negras",
+      "name": "Piedras Negras",
+      "state": "COA",
+      "role": "destination",
+      "major": true,
+      "lat": 28.7007,
+      "lng": -100.5236,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "sabinas",
+      "name": "Sabinas",
+      "state": "COA",
+      "role": "destination",
+      "major": false,
+      "lat": 27.8559,
+      "lng": -101.1173,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "monclova",
+      "name": "Monclova",
+      "state": "COA",
+      "role": "destination",
+      "major": true,
+      "lat": 26.9069,
+      "lng": -101.4206,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "torreon",
+      "name": "Torreón",
+      "state": "COA",
+      "role": "destination",
+      "major": true,
+      "lat": 25.5428,
+      "lng": -103.4068,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "saltillo",
+      "name": "Saltillo",
+      "state": "COA",
+      "role": "destination",
+      "major": true,
+      "lat": 25.438,
+      "lng": -100.9737,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "ramos_arizpe",
+      "name": "Ramos Arizpe",
+      "state": "COA",
+      "role": "destination",
+      "major": false,
+      "lat": 25.5392,
+      "lng": -100.9514,
+      "line_operator": "FXE"
+    },
+    {
+      "id": "monterrey",
+      "name": "Monterrey",
+      "state": "NL",
+      "role": "origin",
+      "major": true,
+      "lat": 25.6866,
+      "lng": -100.3161,
+      "line_operator": "CPKC"
+    },
+    {
+      "id": "laredo",
+      "name": "Laredo",
+      "state": "USA",
+      "role": "destination",
+      "major": true,
+      "lat": 27.5306,
+      "lng": -99.4803,
+      "line_operator": "CPKC"
+    }
+  ],
+  "edges": [
+    {
+      "from": "nogales",
+      "to": "cananea",
+      "km": 90
+    },
+    {
+      "from": "cananea",
+      "to": "agua_prieta",
+      "km": 75
+    },
+    {
+      "from": "nogales",
+      "to": "hermosillo",
+      "km": 280
+    },
+    {
+      "from": "hermosillo",
+      "to": "guaymas",
+      "km": 130
+    },
+    {
+      "from": "guaymas",
+      "to": "empalme",
+      "km": 15
+    },
+    {
+      "from": "empalme",
+      "to": "cd_obregon",
+      "km": 80
+    },
+    {
+      "from": "cd_obregon",
+      "to": "navojoa",
+      "km": 60
+    },
+    {
+      "from": "agua_prieta",
+      "to": "nuevo_casas_grandes",
+      "km": 155
+    },
+    {
+      "from": "cananea",
+      "to": "nuevo_casas_grandes",
+      "km": 205
+    },
+    {
+      "from": "nuevo_casas_grandes",
+      "to": "ciudad_juarez",
+      "km": 210
+    },
+    {
+      "from": "nuevo_casas_grandes",
+      "to": "cuauhtemoc",
+      "km": 180
+    },
+    {
+      "from": "cuauhtemoc",
+      "to": "chihuahua",
+      "km": 100
+    },
+    {
+      "from": "chihuahua",
+      "to": "ciudad_juarez",
+      "km": 365
+    },
+    {
+      "from": "chihuahua",
+      "to": "ojinaga",
+      "km": 230
+    },
+    {
+      "from": "chihuahua",
+      "to": "delicias",
+      "km": 60
+    },
+    {
+      "from": "delicias",
+      "to": "jimenez",
+      "km": 70
+    },
+    {
+      "from": "jimenez",
+      "to": "parral",
+      "km": 90
+    },
+    {
+      "from": "ojinaga",
+      "to": "piedras_negras",
+      "km": 390
+    },
+    {
+      "from": "jimenez",
+      "to": "torreon",
+      "km": 225
+    },
+    {
+      "from": "parral",
+      "to": "torreon",
+      "km": 205
+    },
+    {
+      "from": "cd_acuna",
+      "to": "piedras_negras",
+      "km": 115
+    },
+    {
+      "from": "piedras_negras",
+      "to": "sabinas",
+      "km": 95
+    },
+    {
+      "from": "sabinas",
+      "to": "monclova",
+      "km": 75
+    },
+    {
+      "from": "monclova",
+      "to": "saltillo",
+      "km": 175
+    },
+    {
+      "from": "torreon",
+      "to": "saltillo",
+      "km": 270
+    },
+    {
+      "from": "saltillo",
+      "to": "ramos_arizpe",
+      "km": 15
+    },
+    {
+      "from": "cd_acuna",
+      "to": "sabinas",
+      "km": 140
+    },
+    {
+      "from": "saltillo",
+      "to": "monterrey",
+      "km": 85
+    },
+    {
+      "from": "monterrey",
+      "to": "laredo",
+      "km": 230
+    },
+    {
+      "from": "chihuahua",
+      "to": "torreon",
+      "km": 330
+    },
+    {
+      "from": "cuauhtemoc",
+      "to": "torreon",
+      "km": 280
+    }
+  ]
+}

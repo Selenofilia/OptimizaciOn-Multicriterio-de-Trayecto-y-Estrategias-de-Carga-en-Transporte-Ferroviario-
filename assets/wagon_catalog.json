@@ -1,0 +1,930 @@
+[
+  {
+    "id": 1,
+    "tipo": "Furgón de cola o de pasajeros (beige)",
+    "transporta": "Personal del tren, maquinistas, herramientas de maniobra o pasajeros.",
+    "wagon_type": "Refrigerated",
+    "sheet": 1,
+    "row": 0,
+    "col": 0,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_01.png",
+    "bbox": [
+      19,
+      40,
+      163,
+      114
+    ],
+    "nombre": "Furgón de cola o de pasajeros (beige): Transporta: Personal del tren, maquinistas, herramientas de maniobra o pasajeros."
+  },
+  {
+    "id": 2,
+    "tipo": "Locomotora diésel (amarilla)",
+    "transporta": "No lleva carga; provee la fuerza de tracción para arrastrar el tren.",
+    "wagon_type": "Locomotive",
+    "sheet": 1,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 1,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_02.png",
+    "bbox": [
+      163,
+      45,
+      317,
+      114
+    ],
+    "nombre": "Locomotora diésel (amarilla): Transporta: No lleva carga; provee la fuerza de tracción para arrastrar el tren."
+  },
+  {
+    "id": 3,
+    "tipo": "Locomotora diésel (roja)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 1,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 2,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_03.png",
+    "bbox": [
+      317,
+      39,
+      472,
+      114
+    ],
+    "nombre": "Locomotora diésel (roja): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 4,
+    "tipo": "Locomotora diésel (azul)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 1,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 3,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_04.png",
+    "bbox": [
+      472,
+      38,
+      634,
+      114
+    ],
+    "nombre": "Locomotora diésel (azul): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 5,
+    "tipo": "Locomotora diésel (verde)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 1,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 4,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_05.png",
+    "bbox": [
+      634,
+      39,
+      806,
+      114
+    ],
+    "nombre": "Locomotora diésel (verde): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 6,
+    "tipo": "Locomotora de alta velocidad (amarilla)",
+    "transporta": "Pasajeros y equipaje ligero.",
+    "wagon_type": "Locomotive",
+    "sheet": 1,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 5,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_06.png",
+    "bbox": [
+      806,
+      40,
+      1009,
+      114
+    ],
+    "nombre": "Locomotora de alta velocidad (amarilla): Transporta: Pasajeros y equipaje ligero."
+  },
+  {
+    "id": 7,
+    "tipo": "Furgón cerrado (marrón)",
+    "transporta": "Carga general protegida del clima (cajas, palés, electrodomésticos, alimentos envasados o repuestos).",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 1,
+    "col": 0,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_07.png",
+    "bbox": [
+      15,
+      159,
+      156,
+      225
+    ],
+    "nombre": "Furgón cerrado (marrón): Transporta: Carga general protegida del clima (cajas, palés, electrodomésticos, alimentos envasados o repuestos)."
+  },
+  {
+    "id": 8,
+    "tipo": "Vagón tolva (azul grisáceo)",
+    "transporta": "Graneles secos que se descargan por debajo (granos, cereales, fertilizantes, cemento).",
+    "wagon_type": "Hopper",
+    "sheet": 1,
+    "row": 1,
+    "col": 1,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_08.png",
+    "bbox": [
+      149,
+      156,
+      284,
+      225
+    ],
+    "nombre": "Vagón tolva (azul grisáceo): Transporta: Graneles secos que se descargan por debajo (granos, cereales, fertilizantes, cemento)."
+  },
+  {
+    "id": 9,
+    "tipo": "Furgón cerrado (verde claro)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 1,
+    "col": 2,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_09.png",
+    "bbox": [
+      277,
+      154,
+      428,
+      225
+    ],
+    "nombre": "Furgón cerrado (verde claro): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 10,
+    "tipo": "Vagón góndola / jaula larga (azul verdoso)",
+    "transporta": "Carga a granel o voluminosa sin techo (minerales, chatarra, madera o vehículos en jaula).",
+    "wagon_type": "Gondola",
+    "sheet": 1,
+    "row": 1,
+    "col": 3,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_10.png",
+    "bbox": [
+      421,
+      166,
+      640,
+      225
+    ],
+    "nombre": "Vagón góndola / jaula larga (azul verdoso): Transporta: Carga a granel o voluminosa sin techo (minerales, chatarra, madera o vehículos en jaula)."
+  },
+  {
+    "id": 11,
+    "tipo": "Furgón cerrado (morado oscuro)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 1,
+    "col": 4,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_11.png",
+    "bbox": [
+      637,
+      157,
+      800,
+      221
+    ],
+    "nombre": "Furgón cerrado (morado oscuro): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 12,
+    "tipo": "Vagón plataforma con teleros/estacas (azul)",
+    "transporta": "Cargas largas y rígidas que necesitan contención lateral (tubos de acero, vigas, rieles, madera).",
+    "wagon_type": "Flatcar",
+    "sheet": 1,
+    "row": 1,
+    "col": 5,
+    "cols_in_row": 6,
+    "image": "assets/wagons/wagon_12.png",
+    "bbox": [
+      802,
+      144,
+      1007,
+      225
+    ],
+    "nombre": "Vagón plataforma con teleros/estacas (azul): Transporta: Cargas largas y rígidas que necesitan contención lateral (tubos de acero, vigas, rieles, madera)."
+  },
+  {
+    "id": 13,
+    "tipo": "Furgón cerrado (rojo)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 2,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_13.png",
+    "bbox": [
+      15,
+      268,
+      183,
+      348
+    ],
+    "nombre": "Furgón cerrado (rojo): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 14,
+    "tipo": "Vagón cisterna / tanque (azul oscuro)",
+    "transporta": "Líquidos o gases a presión (agua, combustibles, químicos, gas licuado, aceite).",
+    "wagon_type": "Tank",
+    "sheet": 1,
+    "row": 2,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_14.png",
+    "bbox": [
+      193,
+      254,
+      387,
+      348
+    ],
+    "nombre": "Vagón cisterna / tanque (azul oscuro): Transporta: Líquidos o gases a presión (agua, combustibles, químicos, gas licuado, aceite)."
+  },
+  {
+    "id": 15,
+    "tipo": "Furgón cerrado (gris claro)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 2,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_15.png",
+    "bbox": [
+      397,
+      268,
+      576,
+      348
+    ],
+    "nombre": "Furgón cerrado (gris claro): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 16,
+    "tipo": "Furgón cerrado (azul oscuro acanalado)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 2,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_16.png",
+    "bbox": [
+      587,
+      267,
+      774,
+      348
+    ],
+    "nombre": "Furgón cerrado (azul oscuro acanalado): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 17,
+    "tipo": "Vagón portacontenedores (con cargas)",
+    "transporta": "Mercancía general agrupada dentro de contenedores estándar de transporte intermodal.",
+    "wagon_type": "Flatcar",
+    "sheet": 1,
+    "row": 2,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_17.png",
+    "bbox": [
+      785,
+      266,
+      1007,
+      348
+    ],
+    "nombre": "Vagón portacontenedores (con cargas): Transporta: Mercancía general agrupada dentro de contenedores estándar de transporte intermodal."
+  },
+  {
+    "id": 18,
+    "tipo": "Vagón tolva (azul)",
+    "transporta": "Graneles secos (arena, grava, cereales).",
+    "wagon_type": "Hopper",
+    "sheet": 1,
+    "row": 3,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_18.png",
+    "bbox": [
+      15,
+      380,
+      198,
+      470
+    ],
+    "nombre": "Vagón tolva (azul): Transporta: Graneles secos (arena, grava, cereales)."
+  },
+  {
+    "id": 19,
+    "tipo": "Vagón plataforma / góndola vacía (gris)",
+    "transporta": "Maquinaria pesada, vehículos, tractores o piezas industriales de gran tamaño.",
+    "wagon_type": "Gondola",
+    "sheet": 1,
+    "row": 3,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_19.png",
+    "bbox": [
+      208,
+      406,
+      399,
+      470
+    ],
+    "nombre": "Vagón plataforma / góndola vacía (gris): Transporta: Maquinaria pesada, vehículos, tractores o piezas industriales de gran tamaño."
+  },
+  {
+    "id": 20,
+    "tipo": "Vagón maderero (con troncos)",
+    "transporta": "Troncos de árboles enteros o madera gruesa aserrada.",
+    "wagon_type": "Flatcar",
+    "sheet": 1,
+    "row": 3,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_20.png",
+    "bbox": [
+      409,
+      394,
+      603,
+      470
+    ],
+    "nombre": "Vagón maderero (con troncos): Transporta: Troncos de árboles enteros o madera gruesa aserrada."
+  },
+  {
+    "id": 21,
+    "tipo": "Furgón cerrado (fucsia / morado claro)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 3,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_21.png",
+    "bbox": [
+      613,
+      387,
+      819,
+      470
+    ],
+    "nombre": "Furgón cerrado (fucsia / morado claro): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 22,
+    "tipo": "Vagón cisterna (amarillo pálido)",
+    "transporta": "Líquidos o gases a presión.",
+    "wagon_type": "Tank",
+    "sheet": 1,
+    "row": 3,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_22.png",
+    "bbox": [
+      829,
+      378,
+      1007,
+      470
+    ],
+    "nombre": "Vagón cisterna (amarillo pálido): Transporta: Líquidos o gases a presión."
+  },
+  {
+    "id": 23,
+    "tipo": "Vagón cisterna (azul con franjas)",
+    "transporta": "Líquidos o gases a presión.",
+    "wagon_type": "Tank",
+    "sheet": 1,
+    "row": 4,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_23.png",
+    "bbox": [
+      15,
+      502,
+      211,
+      590
+    ],
+    "nombre": "Vagón cisterna (azul con franjas): Transporta: Líquidos o gases a presión."
+  },
+  {
+    "id": 24,
+    "tipo": "Vagón góndola (con carga negra)",
+    "transporta": "Graneles pesados que no temen a la intemperie (carbón, mineral de hierro, balasto, chatarra).",
+    "wagon_type": "Gondola",
+    "sheet": 1,
+    "row": 4,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_24.png",
+    "bbox": [
+      216,
+      499,
+      402,
+      590
+    ],
+    "nombre": "Vagón góndola (con carga negra): Transporta: Graneles pesados que no temen a la intemperie (carbón, mineral de hierro, balasto, chatarra)."
+  },
+  {
+    "id": 25,
+    "tipo": "Vagón plataforma vacío (verde claro)",
+    "transporta": "Maquinaria, bobinas de acero o materiales de construcción grandes.",
+    "wagon_type": "Flatcar",
+    "sheet": 1,
+    "row": 4,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_25.png",
+    "bbox": [
+      406,
+      552,
+      603,
+      590
+    ],
+    "nombre": "Vagón plataforma vacío (verde claro): Transporta: Maquinaria, bobinas de acero o materiales de construcción grandes."
+  },
+  {
+    "id": 26,
+    "tipo": "Vagón tolva (naranja claro / beige)",
+    "transporta": "Graneles secos.",
+    "wagon_type": "Hopper",
+    "sheet": 1,
+    "row": 4,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_26.png",
+    "bbox": [
+      606,
+      501,
+      786,
+      590
+    ],
+    "nombre": "Vagón tolva (naranja claro / beige): Transporta: Graneles secos."
+  },
+  {
+    "id": 27,
+    "tipo": "Furgón cerrado (verde)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 4,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_27.png",
+    "bbox": [
+      790,
+      504,
+      1007,
+      590
+    ],
+    "nombre": "Furgón cerrado (verde): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 28,
+    "tipo": "Furgón cerrado (gris oscuro)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 5,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_28.png",
+    "bbox": [
+      15,
+      620,
+      204,
+      706
+    ],
+    "nombre": "Furgón cerrado (gris oscuro): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 29,
+    "tipo": "Furgón cerrado (burdeos)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 5,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_29.png",
+    "bbox": [
+      205,
+      620,
+      396,
+      706
+    ],
+    "nombre": "Furgón cerrado (burdeos): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 30,
+    "tipo": "Vagón tolva (amarillo)",
+    "transporta": "Graneles secos.",
+    "wagon_type": "Hopper",
+    "sheet": 1,
+    "row": 5,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_30.png",
+    "bbox": [
+      397,
+      617,
+      622,
+      706
+    ],
+    "nombre": "Vagón tolva (amarillo): Transporta: Graneles secos."
+  },
+  {
+    "id": 31,
+    "tipo": "Vagón cisterna (rojo oscuro)",
+    "transporta": "Líquidos o gases a presión.",
+    "wagon_type": "Tank",
+    "sheet": 1,
+    "row": 5,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_31.png",
+    "bbox": [
+      623,
+      623,
+      821,
+      706
+    ],
+    "nombre": "Vagón cisterna (rojo oscuro): Transporta: Líquidos o gases a presión."
+  },
+  {
+    "id": 32,
+    "tipo": "Furgón cerrado (beige)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 1,
+    "row": 5,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_32.png",
+    "bbox": [
+      821,
+      622,
+      1008,
+      706
+    ],
+    "nombre": "Furgón cerrado (beige): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 33,
+    "tipo": "Locomotora diésel (roja y amarilla)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 2,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 0,
+    "cols_in_row": 4,
+    "image": "assets/wagons/wagon_33.png",
+    "bbox": [
+      0,
+      9,
+      261,
+      90
+    ],
+    "nombre": "Locomotora diésel (roja y amarilla): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 34,
+    "tipo": "Vagón góndola (con carga negra)",
+    "transporta": "Carbón, mineral, arena gruesa o chatarra expuesta al clima.",
+    "wagon_type": "Gondola",
+    "sheet": 2,
+    "row": 0,
+    "col": 1,
+    "cols_in_row": 4,
+    "image": "assets/wagons/wagon_34.png",
+    "bbox": [
+      261,
+      10,
+      522,
+      90
+    ],
+    "nombre": "Vagón góndola (con carga negra): Transporta: Carbón, mineral, arena gruesa o chatarra expuesta al clima."
+  },
+  {
+    "id": 35,
+    "tipo": "Locomotora diésel (gris y blanca)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 2,
+    "is_locomotive": true,
+    "row": 0,
+    "col": 2,
+    "cols_in_row": 4,
+    "image": "assets/wagons/wagon_35.png",
+    "bbox": [
+      527,
+      11,
+      788,
+      90
+    ],
+    "nombre": "Locomotora diésel (gris y blanca): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 36,
+    "tipo": "Vagón cisterna (naranja con franja roja)",
+    "transporta": "Líquidos inflamables, químicos corrosivos o combustibles.",
+    "wagon_type": "Tank",
+    "sheet": 2,
+    "row": 0,
+    "col": 3,
+    "cols_in_row": 4,
+    "image": "assets/wagons/wagon_36.png",
+    "bbox": [
+      799,
+      2,
+      991,
+      90
+    ],
+    "nombre": "Vagón cisterna (naranja con franja roja): Transporta: Líquidos inflamables, químicos corrosivos o combustibles."
+  },
+  {
+    "id": 37,
+    "tipo": "Vagón cisterna (azul claro)",
+    "transporta": "Líquidos o gases a presión.",
+    "wagon_type": "Tank",
+    "sheet": 2,
+    "row": 1,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_37.png",
+    "bbox": [
+      3,
+      111,
+      172,
+      185
+    ],
+    "nombre": "Vagón cisterna (azul claro): Transporta: Líquidos o gases a presión."
+  },
+  {
+    "id": 38,
+    "tipo": "Furgón cerrado (burdeos, puerta abierta)",
+    "transporta": "Carga general paletizada (fácil de cargar y descargar con montacargas).",
+    "wagon_type": "Boxcar",
+    "sheet": 2,
+    "row": 1,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_38.png",
+    "bbox": [
+      172,
+      104,
+      338,
+      185
+    ],
+    "nombre": "Furgón cerrado (burdeos, puerta abierta): Transporta: Carga general paletizada (fácil de cargar y descargar con montacargas)."
+  },
+  {
+    "id": 39,
+    "tipo": "Vagón tolva (blanco / gris claro)",
+    "transporta": "Graneles que requieren protección total contra el agua (cemento en polvo, harina, granos finos).",
+    "wagon_type": "Hopper",
+    "sheet": 2,
+    "row": 1,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_39.png",
+    "bbox": [
+      352,
+      106,
+      520,
+      185
+    ],
+    "nombre": "Vagón tolva (blanco / gris claro): Transporta: Graneles que requieren protección total contra el agua (cemento en polvo, harina, granos finos)."
+  },
+  {
+    "id": 40,
+    "tipo": "Vagón plataforma (con depósitos esféricos)",
+    "transporta": "Gases licuados, refrigerantes o químicos especializados de alta presión.",
+    "wagon_type": "Flatcar",
+    "sheet": 2,
+    "row": 1,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_40.png",
+    "bbox": [
+      521,
+      108,
+      687,
+      185
+    ],
+    "nombre": "Vagón plataforma (con depósitos esféricos): Transporta: Gases licuados, refrigerantes o químicos especializados de alta presión."
+  },
+  {
+    "id": 41,
+    "tipo": "Tren de alta velocidad (azul)",
+    "transporta": "Pasajeros de larga o media distancia.",
+    "wagon_type": "Locomotive",
+    "sheet": 2,
+    "is_locomotive": true,
+    "row": 1,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_41.png",
+    "bbox": [
+      687,
+      102,
+      845,
+      185
+    ],
+    "nombre": "Tren de alta velocidad (azul): Transporta: Pasajeros de larga o media distancia."
+  },
+  {
+    "id": 42,
+    "tipo": "Locomotora diésel / eléctrica (roja y amarilla)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 2,
+    "is_locomotive": true,
+    "row": 2,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_42.png",
+    "bbox": [
+      0,
+      201,
+      301,
+      280
+    ],
+    "nombre": "Locomotora diésel / eléctrica (roja y amarilla): Transporta: Fuerza de tracción."
+  },
+  {
+    "id": 43,
+    "tipo": "Vagón plataforma de chasis descubierto (azul claro)",
+    "transporta": "Contenedores intermodales de carga o estructuras indivisibles muy pesadas.",
+    "wagon_type": "Flatcar",
+    "sheet": 2,
+    "row": 2,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_43.png",
+    "bbox": [
+      305,
+      212,
+      474,
+      280
+    ],
+    "nombre": "Vagón plataforma de chasis descubierto (azul claro): Transporta: Contenedores intermodales de carga o estructuras indivisibles muy pesadas."
+  },
+  {
+    "id": 44,
+    "tipo": "Vagón plataforma con teleros (gris)",
+    "transporta": "Madera, tubos largos, vigas de construcción.",
+    "wagon_type": "Flatcar",
+    "sheet": 2,
+    "row": 2,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_44.png",
+    "bbox": [
+      484,
+      206,
+      652,
+      280
+    ],
+    "nombre": "Vagón plataforma con teleros (gris): Transporta: Madera, tubos largos, vigas de construcción."
+  },
+  {
+    "id": 45,
+    "tipo": "Furgón cerrado (morado)",
+    "transporta": "Carga general protegida del clima.",
+    "wagon_type": "Boxcar",
+    "sheet": 2,
+    "row": 2,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_45.png",
+    "bbox": [
+      660,
+      201,
+      828,
+      280
+    ],
+    "nombre": "Furgón cerrado (morado): Transporta: Carga general protegida del clima."
+  },
+  {
+    "id": 46,
+    "tipo": "Vagón tolva (gris claro)",
+    "transporta": "Graneles secos.",
+    "wagon_type": "Hopper",
+    "sheet": 2,
+    "row": 2,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_46.png",
+    "bbox": [
+      844,
+      197,
+      1012,
+      280
+    ],
+    "nombre": "Vagón tolva (gris claro): Transporta: Graneles secos."
+  },
+  {
+    "id": 47,
+    "tipo": "Vagón tolva (estructura visible)",
+    "transporta": "Materiales a granel muy pesados, típicamente rocas, grava o balasto para las propias vías férreas.",
+    "wagon_type": "Hopper",
+    "sheet": 2,
+    "row": 3,
+    "col": 0,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_47.png",
+    "bbox": [
+      3,
+      309,
+      170,
+      385
+    ],
+    "nombre": "Vagón tolva (estructura visible): Transporta: Materiales a granel muy pesados, típicamente rocas, grava o balasto para las propias vías férreas."
+  },
+  {
+    "id": 48,
+    "tipo": "Vagón grúa",
+    "transporta": "No lleva carga comercial; transporta su propio equipo de elevación para realizar mantenimientos, mover rieles pesados o asistir en accidentes.",
+    "wagon_type": "Flatcar",
+    "sheet": 2,
+    "row": 3,
+    "col": 1,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_48.png",
+    "bbox": [
+      174,
+      295,
+      344,
+      385
+    ],
+    "nombre": "Vagón grúa: Transporta: No lleva carga comercial; transporta su propio equipo de elevación para realizar mantenimientos, mover rieles pesados o asistir en accidentes."
+  },
+  {
+    "id": 49,
+    "tipo": "Vagón góndola (con carga negra)",
+    "transporta": "Carbón o minerales sin protección climática.",
+    "wagon_type": "Gondola",
+    "sheet": 2,
+    "row": 3,
+    "col": 2,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_49.png",
+    "bbox": [
+      347,
+      313,
+      515,
+      386
+    ],
+    "nombre": "Vagón góndola (con carga negra): Transporta: Carbón o minerales sin protección climática."
+  },
+  {
+    "id": 50,
+    "tipo": "Vagón cisterna (gris claro)",
+    "transporta": "Líquidos o gases a presión.",
+    "wagon_type": "Tank",
+    "sheet": 2,
+    "row": 3,
+    "col": 3,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_50.png",
+    "bbox": [
+      572,
+      307,
+      769,
+      385
+    ],
+    "nombre": "Vagón cisterna (gris claro): Transporta: Líquidos o gases a presión."
+  },
+  {
+    "id": 51,
+    "tipo": "Locomotora diésel (naranja y amarilla)",
+    "transporta": "Fuerza de tracción.",
+    "wagon_type": "Locomotive",
+    "sheet": 2,
+    "is_locomotive": true,
+    "row": 3,
+    "col": 4,
+    "cols_in_row": 5,
+    "image": "assets/wagons/wagon_51.png",
+    "bbox": [
+      772,
+      305,
+      1024,
+      386
+    ],
+    "nombre": "Locomotora diésel (naranja y amarilla): Transporta: Fuerza de tracción."
+  }
+]

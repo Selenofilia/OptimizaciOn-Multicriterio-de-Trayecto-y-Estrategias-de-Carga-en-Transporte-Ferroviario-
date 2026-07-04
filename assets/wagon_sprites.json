@@ -1,0 +1,50 @@
+{
+  "Autorack": {
+    "label": "Autorack",
+    "color": "#e2535a",
+    "accent": "#ff7a80",
+    "pattern": "slots"
+  },
+  "Boxcar": {
+    "label": "Boxcar",
+    "color": "#f3b13c",
+    "accent": "#ffd27a",
+    "pattern": "solid"
+  },
+  "Flatcar": {
+    "label": "Flatcar",
+    "color": "#8696ad",
+    "accent": "#a8b8cc",
+    "pattern": "deck"
+  },
+  "Gondola": {
+    "label": "Gondola",
+    "color": "#49e08a",
+    "accent": "#7ef0ad",
+    "pattern": "open"
+  },
+  "Hopper": {
+    "label": "Hopper",
+    "color": "#d98b3a",
+    "accent": "#f0a85a",
+    "pattern": "hopper"
+  },
+  "Refrigerated": {
+    "label": "Refrigerated",
+    "color": "#4ad8e3",
+    "accent": "#7ae8f0",
+    "pattern": "cool"
+  },
+  "Tank": {
+    "label": "Tank",
+    "color": "#9b7bff",
+    "accent": "#b9a0ff",
+    "pattern": "tank"
+  },
+  "Locomotive": {
+    "label": "Locomotora",
+    "color": "#f3b13c",
+    "accent": "#ffd27a",
+    "pattern": "engine"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "model": "capa de ruteo + pre-filtro + capa de carga",
+  "north_corridor": [
+    {
+      "origin": "Chihuahua",
+      "dest": "Laredo",
+      "n": 11,
+      "n_candidates": 80,
+      "leader": "3× (Tank, Autorack, Tank)",
+      "ci": 0.7565831876282542,
+      "dist_id": "FD73",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Chihuahua",
+      "dest": "Saltillo",
+      "n": 8,
+      "n_candidates": 80,
+      "leader": "3× (Flatcar, Tank, Hopper)",
+      "ci": 0.6728170148301914,
+      "dist_id": "FD41",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Chihuahua",
+      "dest": "Torreon",
+      "n": 9,
+      "n_candidates": 80,
+      "leader": "3× (Flatcar, Tank, Refrigerated)",
+      "ci": 0.6563451653382621,
+      "dist_id": "FD49",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Ciudad Juarez",
+      "dest": "Laredo",
+      "n": 9,
+      "n_candidates": 80,
+      "leader": "3× (Hopper, Gondola, Flatcar)",
+      "ci": 0.7054998543918904,
+      "dist_id": "FD46",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Ciudad Juarez",
+      "dest": "Saltillo",
+      "n": 10,
+      "n_candidates": 80,
+      "leader": "3× (Hopper, Autorack, Boxcar)",
+      "ci": 0.6662204868311979,
+      "dist_id": "FD56",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Ciudad Juarez",
+      "dest": "Torreon",
+      "n": 12,
+      "n_candidates": 80,
+      "leader": "2× (Hopper, Flatcar)",
+      "ci": 0.7848518732458525,
+      "dist_id": "FD33",
+      "cars": 2,
+      "label": "2× Hopper + Flatcar"
+    },
+    {
+      "origin": "Monterrey",
+      "dest": "Laredo",
+      "n": 11,
+      "n_candidates": 80,
+      "leader": "3× (Refrigerated, Boxcar, Gondola)",
+      "ci": 0.7135858458061061,
+      "dist_id": "FD74",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Monterrey",
+      "dest": "Saltillo",
+      "n": 9,
+      "n_candidates": 80,
+      "leader": "3× (Refrigerated, Autorack, Refrigerated)",
+      "ci": 0.6474774101233262,
+      "dist_id": "FD49",
+      "cars": 3,
+      "label": "3× mix"
+    },
+    {
+      "origin": "Monterrey",
+      "dest": "Torreon",
+      "n": 8,
+      "n_candidates": 80,
+      "leader": "3× (Tank, Refrigerated, Autorack)",
+      "ci": 0.6915981295405011,
+      "dist_id": "FD38",
+      "cars": 3,
+      "label": "3× mix"
+    }
+  ],
+  "monterrey_laredo": {
+    "top3": [
+      {
+        "dist_id": "FD74",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Boxcar, Gondola)",
+        "ci": 0.7136,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD78",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Hopper, Gondola)",
+        "ci": 0.7088,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD67",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Flatcar, Boxcar)",
+        "ci": 0.6975,
+        "cars": 3
+      }
+    ],
+    "n_candidates": 80,
+    "sensitivity_stability": 0.95,
+    "cv_concordance": 4
+  }
+}
