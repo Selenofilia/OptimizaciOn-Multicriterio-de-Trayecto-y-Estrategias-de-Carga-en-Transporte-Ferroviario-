@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Simulador TOPSIS bicapa para carga ferroviaria en el norte de México"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Colchero García
+    given-names: Abraham Isaac
+    affiliation: Universidad Autónoma de Guerrero
+  - family-names: De la Torre Suárez
+    given-names: José Guadalupe
+    affiliation: Universidad Autónoma de Guerrero
+  - family-names: Ochoa Zezzatti
+    given-names: Alberto
+    affiliation: Universidad Autónoma de Ciudad Juárez
+version: v1.0-paper
+date-released: 2026-07-04
+license: MIT
+keywords:
+  - railway logistics
+  - TOPSIS
+  - multicriteria decision making
+  - Mexico
+  - simulation
+repository-code: "https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-"

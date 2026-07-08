@@ -62,7 +62,7 @@ Se emplea un estudio cuantitativo aplicado que combina simulación multicriterio
 \includegraphics[width=14.5cm]{fig4_red_ferroviaria.png}
 \caption{2. Red ferroviaria modelada del norte de México. 25 estaciones en Chihuahua, Sonora, Coahuila y Nuevo León, con conexión a Laredo. Las terminales del corredor norte (pares O-D del estudio) se resaltan. Elaboración propia a partir de data/cities.json.}
 \end{figure}
-La variable dependiente es el coeficiente $C_i$ del ranking TOPSIS. Tres capas evalúan criterios de beneficio y costo (Tabla 1): pre-filtro interno (11 criterios por estrategia, top-12), capa de carga (10 criterios agregados por formación de 1–6 vagones, pesos fijos) y capa de ruteo (6 criterios de red sobre trayectos Dijkstra). Restricción dura: 0 < cargo\_weight\_tons ≤ max\_capacity\_tons. El listado completo de variables aparece en la Tabla 1 y en el repositorio de materiales de apoyo (https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-, versión v1.0-paper).
+La variable dependiente es el coeficiente $C_i$ del ranking TOPSIS. Tres capas evalúan criterios de beneficio y costo (Tabla 1): pre-filtro interno (11 criterios por estrategia, top-12), capa de carga (10 criterios agregados por formación de 1–6 vagones, pesos fijos) y capa de ruteo (6 criterios de red sobre trayectos Dijkstra). Restricción dura: 0 < cargo\_weight\_tons ≤ max\_capacity\_tons. El listado completo de variables aparece en la Tabla 1 y en https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario- (versión v1.0-paper).
 
 \begin{table}[t]
 \centering
@@ -186,7 +186,7 @@ En síntesis:
   \item Nueve pares O-D exhiben líderes predominantemente de tres vagones ($C_i$ 0.647–0.785); la composición óptima depende del par y del subconjunto factible.
   \item Monterrey–Laredo muestra estabilidad 95 \% ante sensibilidad ±20 \% y concordancia 4/5 en validación cruzada.
   \item El diseño factorial 33 confirma efectos significativos de rentabilidad/carga, eficiencia operativa, interacción AB y curvatura; el factorial mixto valida contingencia por corredor.
-  \item Los materiales de apoyo publicados en https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario- (texto del artículo, diseño experimental y resultados numéricos) permiten interpretar rankings, validación y ANOVA del estudio.
+  \item El simulador del norte de México y los materiales publicados en https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario- permiten reproducir rankings, validación y ANOVA del estudio.
 \subsubsection*{}
 \textbf{Agradecimientos. }Los autores agradecen a la Universidad Autónoma de Guerrero y a la Universidad Autónoma de Ciudad Juárez el apoyo institucional brindado para el desarrollo de esta investigación. Asimismo, reconocen a Joa Pombo (ORCID: https://orcid.org/0000-0002-5877-1989) por la provisión del dataset comercial utilizado en este estudio.
 
@@ -197,7 +197,7 @@ En síntesis:
 \textbf{Declaración sobre inteligencia artificial. }Los autores utilizaron asistentes de IA generativa para borradores y rutinas de análisis; revisaron y asumen responsabilidad del contenido final.
 
 \paragraph{}
-\textbf{Disponibilidad de software y datos. }El texto del artículo (paper.tex), el diseño experimental, la red ferroviaria (data/cities.json) y los resultados numéricos (data/paper\_results.json, data/factorial\_experiment.json) están disponibles en https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-, versión v1.0-paper. El experimento reportado emplea el subconjunto núcleo de 587 estrategias.
+\textbf{Disponibilidad de software y datos. }El simulador del norte de México (SIMULADOR\_TOPSIS.html), el manuscrito (paper.tex), los datasets del experimento y las rutinas de reproducibilidad están disponibles en https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-, versión v1.0-paper. Los rankings del corredor norte se regeneran con scripts/run\_topsis\_analysis.py; el ANOVA factorial 3\textsuperscript{3} y el factorial mixto 9×3, con scripts/run\_factorial\_experiment.py. El experimento reportado emplea el subconjunto núcleo de 587 estrategias; el bundle de 4235 registros embebido en el simulador amplía la exploración interactiva sin redefinir el universo analítico del artículo.
 
 \section{Referencias}
   \bibitem{Behzadian}

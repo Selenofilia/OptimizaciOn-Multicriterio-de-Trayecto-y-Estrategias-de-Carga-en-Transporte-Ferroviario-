@@ -1,0 +1,987 @@
+{
+  "total_visual_wagons": 51,
+  "wagon_types": [
+    "Autorack",
+    "Boxcar",
+    "Flatcar",
+    "Gondola",
+    "Hopper",
+    "Refrigerated",
+    "Tank"
+  ],
+  "railroads": {
+    "FXE": {
+      "name": "Ferromex",
+      "short": "FXE",
+      "color": "#e85d04",
+      "description": "Grupo México Transportes — red occidental y centro-norte"
+    },
+    "CPKC": {
+      "name": "CPKC",
+      "short": "CPKC",
+      "color": "#c1121f",
+      "description": "Canadian Pacific Kansas City — corredor Monterrey–Laredo y frontera NE"
+    }
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "visual_id": "VW001",
+      "tipo": "Furgón de cola o de pasajeros (beige)",
+      "transporta": "Personal del tren, maquinistas, herramientas de maniobra o pasajeros.",
+      "nombre": "Furgón de cola o de pasajeros (beige): Transporta: Personal del tren, maquinistas, herramientas de maniobra o pasajeros.",
+      "wagon_type": "Refrigerated",
+      "image": "assets/wagons/wagon_01.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Refrigerated",
+        "color": "#4ad8e3",
+        "accent": "#7ae8f0",
+        "pattern": "cool"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200001",
+      "fleet_index": 0
+    },
+    {
+      "slot": 2,
+      "visual_id": "VW002",
+      "tipo": "Locomotora diésel (amarilla)",
+      "transporta": "No lleva carga; provee la fuerza de tracción para arrastrar el tren.",
+      "nombre": "Locomotora diésel (amarilla): Transporta: No lleva carga; provee la fuerza de tracción para arrastrar el tren.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_02.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 400002"
+    },
+    {
+      "slot": 3,
+      "visual_id": "VW003",
+      "tipo": "Locomotora diésel (roja)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (roja): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_03.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400003"
+    },
+    {
+      "slot": 4,
+      "visual_id": "VW004",
+      "tipo": "Locomotora diésel (azul)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (azul): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_04.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 400004"
+    },
+    {
+      "slot": 5,
+      "visual_id": "VW005",
+      "tipo": "Locomotora diésel (verde)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (verde): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_05.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400005"
+    },
+    {
+      "slot": 6,
+      "visual_id": "VW006",
+      "tipo": "Locomotora de alta velocidad (amarilla)",
+      "transporta": "Pasajeros y equipaje ligero.",
+      "nombre": "Locomotora de alta velocidad (amarilla): Transporta: Pasajeros y equipaje ligero.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_06.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 400006"
+    },
+    {
+      "slot": 7,
+      "visual_id": "VW007",
+      "tipo": "Furgón cerrado (marrón)",
+      "transporta": "Carga general protegida del clima (cajas, palés, electrodomésticos, alimentos envasados o repuestos).",
+      "nombre": "Furgón cerrado (marrón): Transporta: Carga general protegida del clima (cajas, palés, electrodomésticos, alimentos envasados o repuestos).",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_07.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200007",
+      "fleet_index": 6
+    },
+    {
+      "slot": 8,
+      "visual_id": "VW008",
+      "tipo": "Vagón tolva (azul grisáceo)",
+      "transporta": "Graneles secos que se descargan por debajo (granos, cereales, fertilizantes, cemento).",
+      "nombre": "Vagón tolva (azul grisáceo): Transporta: Graneles secos que se descargan por debajo (granos, cereales, fertilizantes, cemento).",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_08.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200008",
+      "fleet_index": 7
+    },
+    {
+      "slot": 9,
+      "visual_id": "VW009",
+      "tipo": "Furgón cerrado (verde claro)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (verde claro): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_09.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200009",
+      "fleet_index": 8
+    },
+    {
+      "slot": 10,
+      "visual_id": "VW010",
+      "tipo": "Vagón góndola / jaula larga (azul verdoso)",
+      "transporta": "Carga a granel o voluminosa sin techo (minerales, chatarra, madera o vehículos en jaula).",
+      "nombre": "Vagón góndola / jaula larga (azul verdoso): Transporta: Carga a granel o voluminosa sin techo (minerales, chatarra, madera o vehículos en jaula).",
+      "wagon_type": "Gondola",
+      "image": "assets/wagons/wagon_10.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Gondola",
+        "color": "#49e08a",
+        "accent": "#7ef0ad",
+        "pattern": "open"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200010",
+      "fleet_index": 9
+    },
+    {
+      "slot": 11,
+      "visual_id": "VW011",
+      "tipo": "Furgón cerrado (morado oscuro)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (morado oscuro): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_11.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200011",
+      "fleet_index": 10
+    },
+    {
+      "slot": 12,
+      "visual_id": "VW012",
+      "tipo": "Vagón plataforma con teleros/estacas (azul)",
+      "transporta": "Cargas largas y rígidas que necesitan contención lateral (tubos de acero, vigas, rieles, madera).",
+      "nombre": "Vagón plataforma con teleros/estacas (azul): Transporta: Cargas largas y rígidas que necesitan contención lateral (tubos de acero, vigas, rieles, madera).",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_12.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200012",
+      "fleet_index": 11
+    },
+    {
+      "slot": 13,
+      "visual_id": "VW013",
+      "tipo": "Furgón cerrado (rojo)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (rojo): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_13.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200013",
+      "fleet_index": 12
+    },
+    {
+      "slot": 14,
+      "visual_id": "VW014",
+      "tipo": "Vagón cisterna / tanque (azul oscuro)",
+      "transporta": "Líquidos o gases a presión (agua, combustibles, químicos, gas licuado, aceite).",
+      "nombre": "Vagón cisterna / tanque (azul oscuro): Transporta: Líquidos o gases a presión (agua, combustibles, químicos, gas licuado, aceite).",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_14.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200014",
+      "fleet_index": 13
+    },
+    {
+      "slot": 15,
+      "visual_id": "VW015",
+      "tipo": "Furgón cerrado (gris claro)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (gris claro): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_15.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200015",
+      "fleet_index": 14
+    },
+    {
+      "slot": 16,
+      "visual_id": "VW016",
+      "tipo": "Furgón cerrado (azul oscuro acanalado)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (azul oscuro acanalado): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_16.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200016",
+      "fleet_index": 15
+    },
+    {
+      "slot": 17,
+      "visual_id": "VW017",
+      "tipo": "Vagón portacontenedores (con cargas)",
+      "transporta": "Mercancía general agrupada dentro de contenedores estándar de transporte intermodal.",
+      "nombre": "Vagón portacontenedores (con cargas): Transporta: Mercancía general agrupada dentro de contenedores estándar de transporte intermodal.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_17.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200017",
+      "fleet_index": 16
+    },
+    {
+      "slot": 18,
+      "visual_id": "VW018",
+      "tipo": "Vagón tolva (azul)",
+      "transporta": "Graneles secos (arena, grava, cereales).",
+      "nombre": "Vagón tolva (azul): Transporta: Graneles secos (arena, grava, cereales).",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_18.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200018",
+      "fleet_index": 17
+    },
+    {
+      "slot": 19,
+      "visual_id": "VW019",
+      "tipo": "Vagón plataforma / góndola vacía (gris)",
+      "transporta": "Maquinaria pesada, vehículos, tractores o piezas industriales de gran tamaño.",
+      "nombre": "Vagón plataforma / góndola vacía (gris): Transporta: Maquinaria pesada, vehículos, tractores o piezas industriales de gran tamaño.",
+      "wagon_type": "Gondola",
+      "image": "assets/wagons/wagon_19.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Gondola",
+        "color": "#49e08a",
+        "accent": "#7ef0ad",
+        "pattern": "open"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200019",
+      "fleet_index": 18
+    },
+    {
+      "slot": 20,
+      "visual_id": "VW020",
+      "tipo": "Vagón maderero (con troncos)",
+      "transporta": "Troncos de árboles enteros o madera gruesa aserrada.",
+      "nombre": "Vagón maderero (con troncos): Transporta: Troncos de árboles enteros o madera gruesa aserrada.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_20.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200020",
+      "fleet_index": 19
+    },
+    {
+      "slot": 21,
+      "visual_id": "VW021",
+      "tipo": "Furgón cerrado (fucsia / morado claro)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (fucsia / morado claro): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_21.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200021",
+      "fleet_index": 20
+    },
+    {
+      "slot": 22,
+      "visual_id": "VW022",
+      "tipo": "Vagón cisterna (amarillo pálido)",
+      "transporta": "Líquidos o gases a presión.",
+      "nombre": "Vagón cisterna (amarillo pálido): Transporta: Líquidos o gases a presión.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_22.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200022",
+      "fleet_index": 21
+    },
+    {
+      "slot": 23,
+      "visual_id": "VW023",
+      "tipo": "Vagón cisterna (azul con franjas)",
+      "transporta": "Líquidos o gases a presión.",
+      "nombre": "Vagón cisterna (azul con franjas): Transporta: Líquidos o gases a presión.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_23.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200023",
+      "fleet_index": 22
+    },
+    {
+      "slot": 24,
+      "visual_id": "VW024",
+      "tipo": "Vagón góndola (con carga negra)",
+      "transporta": "Graneles pesados que no temen a la intemperie (carbón, mineral de hierro, balasto, chatarra).",
+      "nombre": "Vagón góndola (con carga negra): Transporta: Graneles pesados que no temen a la intemperie (carbón, mineral de hierro, balasto, chatarra).",
+      "wagon_type": "Gondola",
+      "image": "assets/wagons/wagon_24.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Gondola",
+        "color": "#49e08a",
+        "accent": "#7ef0ad",
+        "pattern": "open"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200024",
+      "fleet_index": 23
+    },
+    {
+      "slot": 25,
+      "visual_id": "VW025",
+      "tipo": "Vagón plataforma vacío (verde claro)",
+      "transporta": "Maquinaria, bobinas de acero o materiales de construcción grandes.",
+      "nombre": "Vagón plataforma vacío (verde claro): Transporta: Maquinaria, bobinas de acero o materiales de construcción grandes.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_25.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200025",
+      "fleet_index": 24
+    },
+    {
+      "slot": 26,
+      "visual_id": "VW026",
+      "tipo": "Vagón tolva (naranja claro / beige)",
+      "transporta": "Graneles secos.",
+      "nombre": "Vagón tolva (naranja claro / beige): Transporta: Graneles secos.",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_26.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200026",
+      "fleet_index": 25
+    },
+    {
+      "slot": 27,
+      "visual_id": "VW027",
+      "tipo": "Furgón cerrado (verde)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (verde): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_27.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200027",
+      "fleet_index": 26
+    },
+    {
+      "slot": 28,
+      "visual_id": "VW028",
+      "tipo": "Furgón cerrado (gris oscuro)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (gris oscuro): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_28.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200028",
+      "fleet_index": 27
+    },
+    {
+      "slot": 29,
+      "visual_id": "VW029",
+      "tipo": "Furgón cerrado (burdeos)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (burdeos): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_29.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200029",
+      "fleet_index": 28
+    },
+    {
+      "slot": 30,
+      "visual_id": "VW030",
+      "tipo": "Vagón tolva (amarillo)",
+      "transporta": "Graneles secos.",
+      "nombre": "Vagón tolva (amarillo): Transporta: Graneles secos.",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_30.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200030",
+      "fleet_index": 29
+    },
+    {
+      "slot": 31,
+      "visual_id": "VW031",
+      "tipo": "Vagón cisterna (rojo oscuro)",
+      "transporta": "Líquidos o gases a presión.",
+      "nombre": "Vagón cisterna (rojo oscuro): Transporta: Líquidos o gases a presión.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_31.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200031",
+      "fleet_index": 30
+    },
+    {
+      "slot": 32,
+      "visual_id": "VW032",
+      "tipo": "Furgón cerrado (beige)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (beige): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_32.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200032",
+      "fleet_index": 31
+    },
+    {
+      "slot": 33,
+      "visual_id": "VW033",
+      "tipo": "Locomotora diésel (roja y amarilla)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (roja y amarilla): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_33.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400033"
+    },
+    {
+      "slot": 34,
+      "visual_id": "VW034",
+      "tipo": "Vagón góndola (con carga negra)",
+      "transporta": "Carbón, mineral, arena gruesa o chatarra expuesta al clima.",
+      "nombre": "Vagón góndola (con carga negra): Transporta: Carbón, mineral, arena gruesa o chatarra expuesta al clima.",
+      "wagon_type": "Gondola",
+      "image": "assets/wagons/wagon_34.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Gondola",
+        "color": "#49e08a",
+        "accent": "#7ef0ad",
+        "pattern": "open"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200034",
+      "fleet_index": 33
+    },
+    {
+      "slot": 35,
+      "visual_id": "VW035",
+      "tipo": "Locomotora diésel (gris y blanca)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (gris y blanca): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_35.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400035"
+    },
+    {
+      "slot": 36,
+      "visual_id": "VW036",
+      "tipo": "Vagón cisterna (naranja con franja roja)",
+      "transporta": "Líquidos inflamables, químicos corrosivos o combustibles.",
+      "nombre": "Vagón cisterna (naranja con franja roja): Transporta: Líquidos inflamables, químicos corrosivos o combustibles.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_36.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200036",
+      "fleet_index": 35
+    },
+    {
+      "slot": 37,
+      "visual_id": "VW037",
+      "tipo": "Vagón cisterna (azul claro)",
+      "transporta": "Líquidos o gases a presión.",
+      "nombre": "Vagón cisterna (azul claro): Transporta: Líquidos o gases a presión.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_37.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200037",
+      "fleet_index": 36
+    },
+    {
+      "slot": 38,
+      "visual_id": "VW038",
+      "tipo": "Furgón cerrado (burdeos, puerta abierta)",
+      "transporta": "Carga general paletizada (fácil de cargar y descargar con montacargas).",
+      "nombre": "Furgón cerrado (burdeos, puerta abierta): Transporta: Carga general paletizada (fácil de cargar y descargar con montacargas).",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_38.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200038",
+      "fleet_index": 37
+    },
+    {
+      "slot": 39,
+      "visual_id": "VW039",
+      "tipo": "Vagón tolva (blanco / gris claro)",
+      "transporta": "Graneles que requieren protección total contra el agua (cemento en polvo, harina, granos finos).",
+      "nombre": "Vagón tolva (blanco / gris claro): Transporta: Graneles que requieren protección total contra el agua (cemento en polvo, harina, granos finos).",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_39.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200039",
+      "fleet_index": 38
+    },
+    {
+      "slot": 40,
+      "visual_id": "VW040",
+      "tipo": "Vagón plataforma (con depósitos esféricos)",
+      "transporta": "Gases licuados, refrigerantes o químicos especializados de alta presión.",
+      "nombre": "Vagón plataforma (con depósitos esféricos): Transporta: Gases licuados, refrigerantes o químicos especializados de alta presión.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_40.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200040",
+      "fleet_index": 39
+    },
+    {
+      "slot": 41,
+      "visual_id": "VW041",
+      "tipo": "Tren de alta velocidad (azul)",
+      "transporta": "Pasajeros de larga o media distancia.",
+      "nombre": "Tren de alta velocidad (azul): Transporta: Pasajeros de larga o media distancia.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_41.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400041"
+    },
+    {
+      "slot": 42,
+      "visual_id": "VW042",
+      "tipo": "Locomotora diésel / eléctrica (roja y amarilla)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel / eléctrica (roja y amarilla): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_42.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 400042"
+    },
+    {
+      "slot": 43,
+      "visual_id": "VW043",
+      "tipo": "Vagón plataforma de chasis descubierto (azul claro)",
+      "transporta": "Contenedores intermodales de carga o estructuras indivisibles muy pesadas.",
+      "nombre": "Vagón plataforma de chasis descubierto (azul claro): Transporta: Contenedores intermodales de carga o estructuras indivisibles muy pesadas.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_43.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200043",
+      "fleet_index": 1
+    },
+    {
+      "slot": 44,
+      "visual_id": "VW044",
+      "tipo": "Vagón plataforma con teleros (gris)",
+      "transporta": "Madera, tubos largos, vigas de construcción.",
+      "nombre": "Vagón plataforma con teleros (gris): Transporta: Madera, tubos largos, vigas de construcción.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_44.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200044",
+      "fleet_index": 2
+    },
+    {
+      "slot": 45,
+      "visual_id": "VW045",
+      "tipo": "Furgón cerrado (morado)",
+      "transporta": "Carga general protegida del clima.",
+      "nombre": "Furgón cerrado (morado): Transporta: Carga general protegida del clima.",
+      "wagon_type": "Boxcar",
+      "image": "assets/wagons/wagon_45.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Boxcar",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "solid"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200045",
+      "fleet_index": 3
+    },
+    {
+      "slot": 46,
+      "visual_id": "VW046",
+      "tipo": "Vagón tolva (gris claro)",
+      "transporta": "Graneles secos.",
+      "nombre": "Vagón tolva (gris claro): Transporta: Graneles secos.",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_46.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200046",
+      "fleet_index": 4
+    },
+    {
+      "slot": 47,
+      "visual_id": "VW047",
+      "tipo": "Vagón tolva (estructura visible)",
+      "transporta": "Materiales a granel muy pesados, típicamente rocas, grava o balasto para las propias vías férreas.",
+      "nombre": "Vagón tolva (estructura visible): Transporta: Materiales a granel muy pesados, típicamente rocas, grava o balasto para las propias vías férreas.",
+      "wagon_type": "Hopper",
+      "image": "assets/wagons/wagon_47.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Hopper",
+        "color": "#d98b3a",
+        "accent": "#f0a85a",
+        "pattern": "hopper"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200047",
+      "fleet_index": 5
+    },
+    {
+      "slot": 48,
+      "visual_id": "VW048",
+      "tipo": "Vagón grúa",
+      "transporta": "No lleva carga comercial; transporta su propio equipo de elevación para realizar mantenimientos, mover rieles pesados o asistir en accidentes.",
+      "nombre": "Vagón grúa: Transporta: No lleva carga comercial; transporta su propio equipo de elevación para realizar mantenimientos, mover rieles pesados o asistir en accidentes.",
+      "wagon_type": "Flatcar",
+      "image": "assets/wagons/wagon_48.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Flatcar",
+        "color": "#8696ad",
+        "accent": "#a8b8cc",
+        "pattern": "deck"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 200048",
+      "fleet_index": 6
+    },
+    {
+      "slot": 49,
+      "visual_id": "VW049",
+      "tipo": "Vagón góndola (con carga negra)",
+      "transporta": "Carbón o minerales sin protección climática.",
+      "nombre": "Vagón góndola (con carga negra): Transporta: Carbón o minerales sin protección climática.",
+      "wagon_type": "Gondola",
+      "image": "assets/wagons/wagon_49.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Gondola",
+        "color": "#49e08a",
+        "accent": "#7ef0ad",
+        "pattern": "open"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200049",
+      "fleet_index": 7
+    },
+    {
+      "slot": 50,
+      "visual_id": "VW050",
+      "tipo": "Vagón cisterna (gris claro)",
+      "transporta": "Líquidos o gases a presión.",
+      "nombre": "Vagón cisterna (gris claro): Transporta: Líquidos o gases a presión.",
+      "wagon_type": "Tank",
+      "image": "assets/wagons/wagon_50.png",
+      "is_locomotive": false,
+      "sprite": {
+        "label": "Tank",
+        "color": "#9b7bff",
+        "accent": "#b9a0ff",
+        "pattern": "tank"
+      },
+      "owner_railroad": "FXE",
+      "car_number": "FXE 200050",
+      "fleet_index": 8
+    },
+    {
+      "slot": 51,
+      "visual_id": "VW051",
+      "tipo": "Locomotora diésel (naranja y amarilla)",
+      "transporta": "Fuerza de tracción.",
+      "nombre": "Locomotora diésel (naranja y amarilla): Transporta: Fuerza de tracción.",
+      "wagon_type": "Locomotive",
+      "image": "assets/wagons/wagon_51.png",
+      "is_locomotive": true,
+      "sprite": {
+        "label": "Locomotora",
+        "color": "#f3b13c",
+        "accent": "#ffd27a",
+        "pattern": "engine"
+      },
+      "owner_railroad": "CPKC",
+      "car_number": "CPKC 400051"
+    }
+  ]
+}
