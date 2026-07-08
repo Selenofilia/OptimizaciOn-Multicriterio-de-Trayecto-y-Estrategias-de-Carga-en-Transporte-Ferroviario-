@@ -1,8 +1,8 @@
-# RUTA NORTE — Simulador TOPSIS de carga ferroviaria
+# Norte de México — Simulador TOPSIS de carga ferroviaria
 
 Repositorio de apoyo al paper *Optimización multicriterio de trayecto y estrategias de carga en transporte ferroviario mediante un marco TOPSIS bicapa*.
 
-Contiene el simulador interactivo **RUTA NORTE**, los datasets del experimento y los scripts que reproducen los resultados numéricos del artículo (rankings, sensibilidad, validación cruzada y ANOVA factorial 3³).
+Contiene el simulador interactivo **del norte de México**, los datasets del experimento y los scripts que reproducen los resultados numéricos del artículo (rankings, sensibilidad, validación cruzada y ANOVA factorial 3³).
 
 ## Contenido
 
@@ -76,7 +76,7 @@ Ver **`REPRODUCIBILITY.md`** para el mapeo sección-del-paper → artefacto.
 ```bibtex
 @software{ruta_norte_2026,
   author  = {Colchero Garc{'i}a, Abraham Isaac and Ochoa, Alberto},
-  title   = {{RUTA NORTE}: Multicriteria Railway Load and Route Simulator},
+  title   = {{Norte de M{\'e}xico}: Multicriteria Railway Load and Route Simulator},
   year    = {2026},
   version = {v1.0-paper},
   url     = {https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Experimento factorial 3^k sobre la capa de carga del TOPSIS bicapa.
 
-Aplica un diseno factorial 3^k a la capa de carga del simulador RUTA NORTE.
+Aplica un diseno factorial 3^k a la capa de carga del simulador del norte de México.
 La variable de respuesta es el coeficiente de cercania Ci de la formacion lider.
 
 Factores (3 niveles cada uno: bajo/medio/alto, codificados -1/0/+1):
