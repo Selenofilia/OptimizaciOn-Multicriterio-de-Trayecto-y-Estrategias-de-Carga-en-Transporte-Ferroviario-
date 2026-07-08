@@ -21,11 +21,10 @@ El artefacto principal es **`SIMULADOR_TOPSIS.html`**: una aplicación web autó
 
 El simulador opera sin servidor backend. Los mapas base (OpenStreetMap) requieren conexión a internet.
 
-## Materiales complementarios del artículo
+## Materiales de apoyo al artículo
 
 | Archivo | Función |
 |---------|---------|
-| `paper.tex` | Manuscrito del artículo (formato LNCS) |
 | `docs/diseno_experimental_3k.md` | Diseño factorial 3³ sobre la capa de carga |
 | `data/paper_results.json` | Rankings del corredor norte, sensibilidad ±20 % y validación cruzada k = 5 |
 | `data/factorial_experiment.json` | Tablas ANOVA factorial 3³ y factorial mixto 9×3 |
