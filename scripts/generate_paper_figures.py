@@ -31,7 +31,9 @@ ACCENT = "#1f2a37"
 PAPER_FIGURES = (
     "fig2_arquitectura_2capas.png",
     "fig4_red_ferroviaria.png",
+    "fig5_pipeline_procedimiento.png",
     "fig6_ci_por_par.png",
+    "fig7_monterrey_laredo.png",
 )
 
 
@@ -242,11 +244,65 @@ def fig_ci_pares():
     _save(fig, "fig6_ci_por_par.png")
 
 
+def fig_pipeline():
+    """Fig. 3 — Pipeline operativo (metodología)."""
+    fig, ax = plt.subplots(figsize=(7.8, 5.2))
+    ax.set_xlim(0, 10)
+    ax.set_ylim(0, 10)
+    ax.axis("off")
+
+    steps = [
+        (5, 9.2, "1. Origen–Destino"),
+        (5, 8.0, "2. Dijkstra + capa de ruteo"),
+        (5, 6.8, "3. Filtro factibilidad"),
+        (5, 5.6, "4. Pre-filtro top-12"),
+        (5, 4.4, "5. Formaciones 1–6 vagones"),
+        (5, 3.2, "6. Capa de carga TOPSIS"),
+        (5, 2.0, "7. Validación (MOORA, CV, sens.)"),
+        (5, 0.8, "8. Despacho / exportación JSON"),
+    ]
+    for x, y, label in steps:
+        _box_outline(ax, x, y, 6.8, 0.72, label, fontsize=9.2)
+    for i in range(len(steps) - 1):
+        _arrow(ax, 5, steps[i][1] - 0.38, 5, steps[i + 1][1] + 0.38)
+    ax.set_title("Pipeline del simulador TOPSIS bicapa", fontsize=11.5)
+    _save(fig, "fig5_pipeline_procedimiento.png")
+
+
+def fig_monterrey_laredo():
+    """Fig. — Top 3 formaciones Monterrey–Laredo."""
+    top3 = _load_results().get("monterrey_laredo", {}).get("top3", [])
+    if not top3:
+        top3 = [
+            {"formation": "3× (Refrigerated, Boxcar, Gondola)", "ci": 0.7136},
+            {"formation": "3× (Refrigerated, Hopper, Gondola)", "ci": 0.7088},
+            {"formation": "3× (Refrigerated, Flatcar, Boxcar)", "ci": 0.6975},
+        ]
+    labels = [f"#{i+1}" for i in range(len(top3))]
+    vals = [t["ci"] for t in top3]
+    formations = [t.get("formation", "").replace("3× ", "") for t in top3]
+
+    fig, ax = plt.subplots(figsize=(8.2, 3.6))
+    bars = ax.bar(labels, vals, color="white", edgecolor=INK, linewidth=0.9)
+    ax.set_ylim(0.68, 0.73)
+    ax.set_ylabel("Coeficiente $C_i$")
+    ax.set_title("Top 3 — capa de carga (Monterrey–Laredo)", fontsize=11)
+    for rect, v, form in zip(bars, vals, formations):
+        ax.text(rect.get_x() + rect.get_width() / 2, v + 0.0015, f"{v:.4f}",
+                ha="center", va="bottom", fontsize=8.5, color=INK)
+        ax.text(rect.get_x() + rect.get_width() / 2, 0.6815, form,
+                ha="center", va="bottom", fontsize=6.2, color=INK, rotation=0)
+    ax.grid(True, axis="y", ls=":", color=GRAY_LIGHT)
+    _save(fig, "fig7_monterrey_laredo.png")
+
+
 def main() -> None:
-    print("Generando figuras del paper (4 en total)...")
+    print("Generando figuras del paper...")
     fig_arquitectura()
     fig_red()
+    fig_pipeline()
     fig_ci_pares()
+    fig_monterrey_laredo()
     print("  (efectos principales factorial: scripts/run_factorial_experiment.py)")
     print(f"Listo. Figuras en: {FIG_DIR}")
 

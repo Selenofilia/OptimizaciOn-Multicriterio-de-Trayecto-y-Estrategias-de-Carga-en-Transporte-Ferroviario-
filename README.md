@@ -1,6 +1,6 @@
 # Herramienta MCDM ferroviaria TOPSIS bicapa — norte de México
 
-Repositorio de apoyo al artículo *Optimización Multicriterio de Trayecto y Estrategias de Carga en Transporte Ferroviario Mediante un Marco TOPSIS Bicapa*.
+Repositorio de apoyo al artículo *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México*.
 
 El artefacto principal es **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** (español) o **`TOPSIS-Bicapa-Rail-MCDM.html`** (inglés): una aplicación web autónoma que implementa el marco TOPSIS bicapa (capa de ruteo con Dijkstra y capa de carga sobre formaciones de 1 a 6 vagones) sobre una red ferroviaria de 25 estaciones en Chihuahua, Sonora, Coahuila y Nuevo León, con conexión a Laredo.
 
