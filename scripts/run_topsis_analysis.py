@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run capa de ruteo + pre-filtro + capa de carga for paper results.
 
-Replicates the decision pipeline in SIMULADOR_TOPSIS.html (handleRun).
+Replicates the decision pipeline in TOPSIS-Bicapa-Ferroviario-MCDM.html (handleRun).
 """
 from __future__ import annotations
 

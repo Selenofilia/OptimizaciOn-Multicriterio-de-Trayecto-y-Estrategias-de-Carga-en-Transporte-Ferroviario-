@@ -1,26 +1,26 @@
-# Simulador TOPSIS bicapa para carga ferroviaria en el norte de México
+# Herramienta MCDM ferroviaria TOPSIS bicapa — norte de México
 
 Repositorio de apoyo al artículo *Optimización Multicriterio de Trayecto y Estrategias de Carga en Transporte Ferroviario Mediante un Marco TOPSIS Bicapa*.
 
-El artefacto principal es **`SIMULADOR_TOPSIS.html`** (español) o **`TOPSIS_SIMULATOR.html`** (inglés): una aplicación web autónoma que implementa el marco TOPSIS bicapa (capa de ruteo con Dijkstra y capa de carga sobre formaciones de 1 a 6 vagones) sobre una red ferroviaria de 25 estaciones en Chihuahua, Sonora, Coahuila y Nuevo León, con conexión a Laredo.
+El artefacto principal es **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** (español) o **`TOPSIS-Bicapa-Rail-MCDM.html`** (inglés): una aplicación web autónoma que implementa el marco TOPSIS bicapa (capa de ruteo con Dijkstra y capa de carga sobre formaciones de 1 a 6 vagones) sobre una red ferroviaria de 25 estaciones en Chihuahua, Sonora, Coahuila y Nuevo León, con conexión a Laredo.
 
 ## Artefacto principal
 
 | Componente | Descripción |
 |------------|-------------|
-| `SIMULADOR_TOPSIS.html` | Simulador interactivo (español) del marco TOPSIS bicapa: selección origen–destino, ranking de trayectos, pre-filtro interno, ranking de formaciones, validación MOORA, sensibilidad de pesos y despacho animado |
-| `TOPSIS_SIMULATOR.html` | Misma aplicación en inglés (`Northern Mexico — TOPSIS Rail Freight Simulator`) |
-| `assets/` | Recursos gráficos del simulador (Leaflet, catálogo y sprites de material rodante) |
+| `TOPSIS-Bicapa-Ferroviario-MCDM.html` | Herramienta MCDM interactiva (español): selección origen–destino, ranking de trayectos, pre-filtro interno, ranking de formaciones, validación MOORA, sensibilidad de pesos y despacho animado |
+| `TOPSIS-Bicapa-Rail-MCDM.html` | Misma herramienta en inglés (*Two-Layer TOPSIS Rail MCDM Tool — Northern Mexico freight corridor*) |
+| `assets/` | Recursos gráficos (Leaflet, catálogo y sprites de material rodante) |
 | `data/cities.json` | Topología de la red ferroviaria modelada |
-| `data/dataset.json` | Estrategias de carga embebidas en el simulador (4235 registros; 587 núcleo del artículo) |
+| `data/dataset.json` | Estrategias de carga embebidas (4235 registros; 587 núcleo del artículo) |
 
-### Uso del simulador
+### Uso
 
 1. Clonar o descargar este repositorio.
-2. Abrir **`SIMULADOR_TOPSIS.html`** (español) o **`TOPSIS_SIMULATOR.html`** (inglés) en Chrome, Edge o Firefox.
+2. Abrir **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** (español) o **`TOPSIS-Bicapa-Rail-MCDM.html`** (inglés) en Chrome, Edge o Firefox.
 3. Seleccionar modo **Guía rápida** / **Quick guide** (flujo operativo) o **Análisis completo** / **Full analysis** (controles metodológicos y validación).
 
-El simulador opera sin servidor backend. Los mapas base (OpenStreetMap) requieren conexión a internet.
+La herramienta opera sin servidor backend. Los mapas base (OpenStreetMap) requieren conexión a internet.
 
 ## Materiales de apoyo al artículo
 
@@ -54,7 +54,7 @@ python scripts/run_factorial_experiment.py
 ```bibtex
 @software{norte_mexico_topsis_2026,
   author  = {Colchero Garc{\'i}a, Abraham Isaac and De la Torre Su{\'a}rez, Jos{\'e} Guadalupe and Ochoa Zezzatti, Alberto},
-  title   = {{Simulador TOPSIS bicapa para carga ferroviaria en el norte de M{\'e}xico}},
+  title   = {{Herramienta MCDM ferroviaria TOPSIS bicapa para el corredor del norte de M{\'e}xico}},
   year    = {2026},
   version = {v1.0-paper},
   url     = {https://github.com/Selenofilia/OptimizaciOn-Multicriterio-de-Trayecto-y-Estrategias-de-Carga-en-Transporte-Ferroviario-}
