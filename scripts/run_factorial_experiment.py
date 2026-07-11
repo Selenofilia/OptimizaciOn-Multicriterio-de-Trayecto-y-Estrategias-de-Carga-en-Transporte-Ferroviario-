@@ -72,6 +72,58 @@ FACTOR_LABELS = {
     "B": "Eficiencia operativa",
     "C": "Riesgo/penalizaciones",
 }
+FACTOR_LABELS_EN = {
+    "A": "Profit/load",
+    "B": "Operational efficiency",
+    "C": "Risk/penalties",
+}
+FIG_LABELS = {
+    "es": {
+        "level_ticks": ["bajo\n(-1)", "medio\n(0)", "alto\n(+1)"],
+        "weight_level": "Nivel de peso",
+        "main_ylabel": "$C_i$ medio de la formacion lider",
+        "main_title": "Efectos principales sobre $C_i$ (capa de carga, Monterrey-Laredo)",
+        "level_labels": {-1: "bajo (-1)", 0: "medio (0)", 1: "alto (+1)"},
+        "interaction_title": "Interaccion {f1} x {f2}",
+        "level_of": "Nivel de {f1}",
+        "interaction_ylabel": "$C_i$ medio",
+        "interaction_suptitle": "Graficas de interaccion (promediando el tercer factor)",
+        "residuals_pred": "Predichos ($\\hat{C_i}$)",
+        "residuals": "Residuos",
+        "residuals_vs_pred": "Residuos vs. predichos",
+        "normal_quantiles": "Cuantiles normales",
+        "ordered_residuals": "Residuos ordenados",
+        "normal_paper": "Papel normal",
+        "run_order": "Orden de corrida",
+        "residuals_vs_order": "Residuos vs. orden",
+        "residuals_suptitle": "Analisis de residuos del modelo 3^3",
+    },
+    "en": {
+        "level_ticks": ["low\n(-1)", "medium\n(0)", "high\n(+1)"],
+        "weight_level": "Weight level",
+        "main_ylabel": "Mean leader consist $C_i$",
+        "main_title": "Main effects on $C_i$ (load layer, Monterrey–Laredo)",
+        "level_labels": {-1: "low (-1)", 0: "medium (0)", 1: "high (+1)"},
+        "interaction_title": "Interaction {f1} × {f2}",
+        "level_of": "Level of {f1}",
+        "interaction_ylabel": "Mean $C_i$",
+        "interaction_suptitle": "Interaction plots (averaging the third factor)",
+        "residuals_pred": "Fitted ($\\hat{C_i}$)",
+        "residuals": "Residuals",
+        "residuals_vs_pred": "Residuals vs. fitted",
+        "normal_quantiles": "Normal quantiles",
+        "ordered_residuals": "Ordered residuals",
+        "normal_paper": "Normal probability plot",
+        "run_order": "Run order",
+        "residuals_vs_order": "Residuals vs. run order",
+        "residuals_suptitle": "Residual analysis of the 3^3 model",
+    },
+}
+
+
+def _fig_name(base: str, lang: str) -> str:
+    stem, ext = base.rsplit(".", 1)
+    return f"{stem}_en.{ext}" if lang == "en" else base
 LEVELS = [-1, 0, 1]              # codificacion bajo/medio/alto
 LEVEL_MULT = {-1: 0.5, 0: 1.0, 1: 2.0}
 N_REPLICAS = 5
@@ -391,32 +443,32 @@ def factor_level_means(rows: list[dict], factor: str) -> list[float]:
     return out
 
 
-def fig_main_effects(rows: list[dict], path: Path) -> None:
+def fig_main_effects(rows: list[dict], path: Path, lang: str = "es") -> None:
+    t = FIG_LABELS[lang]
+    factor_labels = FACTOR_LABELS_EN if lang == "en" else FACTOR_LABELS
     ink = "#1f2a37"
     fig, axes = plt.subplots(1, 3, figsize=(11, 3.6), sharey=True)
-    xt = ["bajo\n(-1)", "medio\n(0)", "alto\n(+1)"]
     for ax, factor in zip(axes, "ABC"):
         m = factor_level_means(rows, factor)
         ax.plot([0, 1, 2], m, "o-", color=ink, lw=2, ms=7)
-        ax.set_title(f"Factor {factor}: {FACTOR_LABELS[factor]}", fontsize=9)
+        ax.set_title(f"Factor {factor}: {factor_labels[factor]}", fontsize=9)
         ax.set_xticks([0, 1, 2])
-        ax.set_xticklabels(xt, fontsize=8)
-        ax.set_xlabel("Nivel de peso", fontsize=8)
+        ax.set_xticklabels(t["level_ticks"], fontsize=8)
+        ax.set_xlabel(t["weight_level"], fontsize=8)
         ax.grid(alpha=0.3)
-    axes[0].set_ylabel("$C_i$ medio de la formacion lider")
-    fig.suptitle("Efectos principales sobre $C_i$ (capa de carga, Monterrey-Laredo)", fontsize=10)
+    axes[0].set_ylabel(t["main_ylabel"])
+    fig.suptitle(t["main_title"], fontsize=10)
     fig.tight_layout()
     fig.savefig(path, dpi=140)
     plt.close(fig)
 
 
-def fig_interactions(rows: list[dict], path: Path) -> None:
+def fig_interactions(rows: list[dict], path: Path, lang: str = "es") -> None:
+    t = FIG_LABELS[lang]
     means = _cell_mean_grid(rows)
     pairs = [("A", "B", "C"), ("A", "C", "B"), ("B", "C", "A")]
     fig, axes = plt.subplots(1, 3, figsize=(11, 3.6), sharey=True)
-    # Nivel de peso: bajo / medio / alto (semántica consistente en todo el paper).
     level_colors = {-1: "#b5651d", 0: "#5c4d8a", 1: "#3a7d44"}
-    level_labels = {-1: "bajo (-1)", 0: "medio (0)", 1: "alto (+1)"}
     for ax, (f1, f2, fixed) in zip(axes, pairs):
         for lv2 in LEVELS:
             ys = []
@@ -429,22 +481,23 @@ def fig_interactions(rows: list[dict], path: Path) -> None:
                 ys.append(float(np.nanmean(sel)))
             ax.plot(
                 [0, 1, 2], ys, "o-", color=level_colors[lv2],
-                label=level_labels[lv2], lw=1.8,
+                label=t["level_labels"][lv2], lw=1.8,
             )
-        ax.set_title(f"Interaccion {f1} x {f2}", fontsize=9)
+        ax.set_title(t["interaction_title"].format(f1=f1, f2=f2), fontsize=9)
         ax.set_xticks([0, 1, 2])
         ax.set_xticklabels(["-1", "0", "+1"], fontsize=8)
-        ax.set_xlabel(f"Nivel de {f1}", fontsize=8)
+        ax.set_xlabel(t["level_of"].format(f1=f1), fontsize=8)
         ax.grid(alpha=0.3)
         ax.legend(fontsize=7, title=None)
-    axes[0].set_ylabel("$C_i$ medio")
-    fig.suptitle("Graficas de interaccion (promediando el tercer factor)", fontsize=10)
+    axes[0].set_ylabel(t["interaction_ylabel"])
+    fig.suptitle(t["interaction_suptitle"], fontsize=10)
     fig.tight_layout()
     fig.savefig(path, dpi=140)
     plt.close(fig)
 
 
-def fig_residuals(rows: list[dict], path: Path) -> None:
+def fig_residuals(rows: list[dict], path: Path, lang: str = "es") -> None:
+    t = FIG_LABELS[lang]
     means = _cell_mean_grid(rows)
     fitted = np.array([means[(r["A"], r["B"], r["C"])] for r in rows])
     y = np.array([r["ci"] for r in rows])
@@ -453,26 +506,26 @@ def fig_residuals(rows: list[dict], path: Path) -> None:
     fig, axes = plt.subplots(1, 3, figsize=(11, 3.6))
     axes[0].scatter(fitted, resid, s=14, color=resid_color, alpha=0.7)
     axes[0].axhline(0, color="k", lw=0.8)
-    axes[0].set_xlabel("Predichos ($\\hat{C_i}$)", fontsize=8)
-    axes[0].set_ylabel("Residuos", fontsize=8)
-    axes[0].set_title("Residuos vs. predichos", fontsize=9)
+    axes[0].set_xlabel(t["residuals_pred"], fontsize=8)
+    axes[0].set_ylabel(t["residuals"], fontsize=8)
+    axes[0].set_title(t["residuals_vs_pred"], fontsize=9)
     axes[0].grid(alpha=0.3)
 
     (osm, osr), _ = stats.probplot(resid, dist="norm")
     axes[1].scatter(osm, osr, s=14, color=resid_color, alpha=0.7)
     axes[1].plot(osm, osm * resid.std() + resid.mean(), "k-", lw=0.8)
-    axes[1].set_xlabel("Cuantiles normales", fontsize=8)
-    axes[1].set_ylabel("Residuos ordenados", fontsize=8)
-    axes[1].set_title("Papel normal", fontsize=9)
+    axes[1].set_xlabel(t["normal_quantiles"], fontsize=8)
+    axes[1].set_ylabel(t["ordered_residuals"], fontsize=8)
+    axes[1].set_title(t["normal_paper"], fontsize=9)
     axes[1].grid(alpha=0.3)
 
     axes[2].scatter(range(len(resid)), resid, s=14, color=resid_color, alpha=0.7)
     axes[2].axhline(0, color="k", lw=0.8)
-    axes[2].set_xlabel("Orden de corrida", fontsize=8)
-    axes[2].set_ylabel("Residuos", fontsize=8)
-    axes[2].set_title("Residuos vs. orden", fontsize=9)
+    axes[2].set_xlabel(t["run_order"], fontsize=8)
+    axes[2].set_ylabel(t["residuals"], fontsize=8)
+    axes[2].set_title(t["residuals_vs_order"], fontsize=9)
     axes[2].grid(alpha=0.3)
-    fig.suptitle("Analisis de residuos del modelo 3^3", fontsize=10)
+    fig.suptitle(t["residuals_suptitle"], fontsize=10)
     fig.tight_layout()
     fig.savefig(path, dpi=140)
     plt.close(fig)
@@ -540,9 +593,12 @@ def main() -> None:
         if d["valor_p"] < 0.05:
             print(f"  {d['componente']:<8} F0={d['F0']:>8.2f}  p={d['valor_p']:.4f}")
 
-    # Figura incluida en el paper (efectos principales).
-    fig_main_effects(rows, FIGS_DIR / "factorial_efectos_principales.png")
-    print(f"\nFigura guardada en {FIGS_DIR / 'factorial_efectos_principales.png'}")
+    # Figuras incluidas en el paper (ES + EN).
+    for lang in ("es", "en"):
+        fig_main_effects(rows, FIGS_DIR / _fig_name("factorial_efectos_principales.png", lang), lang)
+        fig_interactions(rows, FIGS_DIR / _fig_name("factorial_interacciones.png", lang), lang)
+        fig_residuals(rows, FIGS_DIR / _fig_name("factorial_residuos.png", lang), lang)
+    print(f"\nFiguras guardadas en {FIGS_DIR} (es + en)")
 
     # Factorial mixto
     print("\n=== Factorial mixto (par O-D x peso) ===")

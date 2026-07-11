@@ -43,10 +43,10 @@ python scripts/run_factorial_experiment.py
 
 | Sección del artículo | Artefacto |
 |----------------------|-----------|
-| Red modelada (Fig. 2) | `data/cities.json` |
-| Rankings por par O-D (Tabla 3, Fig. 3) | `data/paper_results.json` |
-| Sensibilidad y validación cruzada | `data/paper_results.json` |
-| ANOVA factorial 3³ (Tabla 4, Fig. 4) | `data/factorial_experiment.json` |
+| Red modelada (Sección 2; `data/cities.json`) | `data/cities.json` |
+| Rankings por par O-D (Tabla 4, Fig. 2) | `data/paper_results.json` |
+| Sensibilidad y validación cruzada (Tablas 5–6) | `data/paper_results.json` |
+| ANOVA factorial 3³ (Tabla 6, Figs. 3–4) | `data/factorial_experiment.json` |
 | Diseño experimental | `docs/diseno_experimental_3k.md` |
 
 ## Cómo citar
