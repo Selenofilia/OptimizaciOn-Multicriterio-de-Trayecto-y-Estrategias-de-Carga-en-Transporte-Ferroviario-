@@ -461,7 +461,7 @@ def export_results_json(path: Path, north_rows: list[dict], mty: dict) -> None:
         "model": "capa de ruteo + pre-filtro + capa de carga",
         "north_corridor": north_rows,
         "monterrey_laredo": {
-            "top3": [
+            "top8": [
                 {
                     "dist_id": r[1]["dist_id"],
                     "label": r[1]["label"],
@@ -469,7 +469,7 @@ def export_results_json(path: Path, north_rows: list[dict], mty: dict) -> None:
                     "ci": round(r[0], 4),
                     "cars": r[1]["cargo_count"],
                 }
-                for r in mty["dist_ranked"][:3]
+                for r in mty["dist_ranked"][:8]
             ],
             "n_candidates": mty["n_candidates"],
             "sensitivity_stability": mty.get("sensitivity_stability"),
@@ -509,8 +509,8 @@ def main() -> None:
     print(f"\n=== Monterrey -> Laredo (detalle) ===")
     print(f"Estrategias factibles: {mty['n_factibles']}")
     print(f"Formaciones candidatas: {mty['n_candidates']}")
-    print("Top 3 capa de carga:")
-    for i, (ci, dist) in enumerate(mty["dist_ranked"][:3], 1):
+    print("Top 8 capa de carga:")
+    for i, (ci, dist) in enumerate(mty["dist_ranked"][:8], 1):
         print(f"  #{i} {dist['dist_id']} {dist['label']} Ci={ci:.4f} · {format_formation(dist)}")
 
     stab, baseline = sensitivity_distribution(mty["candidates"], dw)

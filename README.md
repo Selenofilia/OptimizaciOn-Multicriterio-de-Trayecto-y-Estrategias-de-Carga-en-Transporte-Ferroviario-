@@ -27,7 +27,7 @@ La herramienta opera sin servidor backend. Los mapas base (OpenStreetMap) requie
 | Archivo | Función |
 |---------|---------|
 | `docs/diseno_experimental_3k.md` | Diseño factorial 3³ sobre la capa de carga |
-| `data/paper_results.json` | Rankings del corredor norte, sensibilidad ±20 % y validación cruzada k = 5 |
+| `data/paper_results.json` | Rankings del corredor norte, sensibilidad ±20 % y prueba de estabilidad por partición (k = 5) |
 | `data/factorial_experiment.json` | Tablas ANOVA factorial 3³ y factorial mixto 9×3 |
 | `data/factorial_experiment.csv` | Corridas del experimento factorial (135 observaciones) |
 
@@ -45,7 +45,7 @@ python scripts/run_factorial_experiment.py
 |----------------------|-----------|
 | Red modelada (Sección 2; `data/cities.json`) | `data/cities.json` |
 | Rankings por par O-D (Tabla 4, Fig. 2) | `data/paper_results.json` |
-| Sensibilidad y validación cruzada (Tablas 5–6) | `data/paper_results.json` |
+| Sensibilidad y estabilidad por partición (Tablas 5–6) | `data/paper_results.json` |
 | ANOVA factorial 3³ (Tabla 6, Figs. 3–4) | `data/factorial_experiment.json` |
 | Diseño experimental | `docs/diseno_experimental_3k.md` |
 

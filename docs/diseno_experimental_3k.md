@@ -6,7 +6,7 @@
 
 ## 1. Justificación metodológica
 
-En la versión actual del estudio, la robustez del ranking TOPSIS se examina mediante análisis de sensibilidad (±20 % en los pesos) y validación cruzada (k = 5), y se declara explícitamente que "no se formulan hipótesis estadísticas formales" (Metodología, §3). Esto deja un vacío de **rigor inferencial**: no se cuantifica, con una prueba estadística, en qué medida las prioridades del decisor (los pesos de los criterios) afectan la recomendación.
+En la versión actual del estudio, la robustez del ranking TOPSIS se examina mediante análisis de sensibilidad (±20 % en los pesos) y una prueba de estabilidad por partición (k = 5; leave-subset-out, no validación cruzada predictiva), y se declara explícitamente que "no se formulan hipótesis estadísticas formales" (Metodología, §3). Esto deja un vacío de **rigor inferencial**: no se cuantifica, con una prueba estadística, en qué medida las prioridades del decisor (los pesos de los criterios) afectan la recomendación.
 
 El diseño factorial 3^k cierra ese vacío. A diferencia de un diseño 2^k, el uso de **tres niveles** por factor permite estimar, además de los efectos lineales y de interacción, los **efectos de curvatura (cuadráticos)**, necesarios cuando la respuesta no es aproximadamente lineal en el rango estudiado. Dado que los pesos de los criterios son factores de tipo continuo, el diseño 3^k resulta apropiado para validar la sensibilidad estructural del ranking.
 
@@ -31,6 +31,8 @@ La codificación −1/0/+1 representa los niveles bajo, medio y alto. El diseño
 ### 2.2 Réplicas y error experimental
 
 TOPSIS es determinista: con los mismos pesos y el mismo conjunto de alternativas produce siempre el mismo C_i. Para generar la variación que sustenta el error experimental y disponer de grados de libertad para el error, cada corrida toma un **submuestreo aleatorio con semilla del 80 %** de las estrategias factibles del par O-D antes de generar las formaciones candidatas. Con **n = 5 réplicas** por tratamiento se obtienen 27 \times 5 = 135 corridas y 3^3(n-1) = 108 grados de libertad para el error.
+
+**Advertencia metodológica:** las réplicas dentro de cada celda comparten estrategias y no son plenamente independientes; el término de error refleja variabilidad inducida por submuestreo, no error de medición. Las inferencias del ANOVA deben interpretarse como sensibilidad estructural del ranking a los pesos, no como predicción operativa.
 
 ## 3. Modelo estadístico e hipótesis
 
@@ -142,6 +144,9 @@ Después del ANOVA, se examinaron los residuos (figura de la §4.3): la gráfica
 ## 7. Limitaciones
 
 - La variación experimental proviene del submuestreo de un conjunto factible pequeño (11 estrategias en Monterrey–Laredo); con datos operativos reales y mayor tamaño muestral las estimaciones ganarían precisión.
+- Las réplicas del ANOVA no son mediciones independientes: comparten estrategias dentro de cada celda y el error modela variabilidad de submuestreo, no incertidumbre operativa.
+- La prueba de estabilidad por partición (k = 5) no es validación cruzada predictiva; evalúa si el líder persiste al retirar un quinto de las formaciones candidatas (sensibilidad a reversión de ranking).
+- El espacio combinatorio teórico desde un pool de 12 estrategias es del orden de 2.500 formaciones de 1–6 vagones; la heurística evalúa hasta 80 (~3 % en el caso límite).
 - Los niveles de los factores son multiplicadores ordinales (bajo/medio/alto); un estudio de superficie de respuesta permitiría optimizar los pesos de forma continua.
 - Los resultados son específicos del dataset sintético del corredor norte y no deben extrapolarse a otras redes sin recalibración.
 

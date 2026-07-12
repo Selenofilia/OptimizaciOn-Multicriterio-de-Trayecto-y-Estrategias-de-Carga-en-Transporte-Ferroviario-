@@ -459,7 +459,7 @@ def fig_main_effects(rows: list[dict], path: Path, lang: str = "es") -> None:
     axes[0].set_ylabel(t["main_ylabel"])
     fig.suptitle(t["main_title"], fontsize=10)
     fig.tight_layout()
-    fig.savefig(path, dpi=140)
+    fig.savefig(path, dpi=800)
     plt.close(fig)
 
 
@@ -492,7 +492,7 @@ def fig_interactions(rows: list[dict], path: Path, lang: str = "es") -> None:
     axes[0].set_ylabel(t["interaction_ylabel"])
     fig.suptitle(t["interaction_suptitle"], fontsize=10)
     fig.tight_layout()
-    fig.savefig(path, dpi=140)
+    fig.savefig(path, dpi=800)
     plt.close(fig)
 
 
@@ -527,7 +527,7 @@ def fig_residuals(rows: list[dict], path: Path, lang: str = "es") -> None:
     axes[2].grid(alpha=0.3)
     fig.suptitle(t["residuals_suptitle"], fontsize=10)
     fig.tight_layout()
-    fig.savefig(path, dpi=140)
+    fig.savefig(path, dpi=800)
     plt.close(fig)
 
 

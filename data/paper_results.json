@@ -102,7 +102,7 @@
     }
   ],
   "monterrey_laredo": {
-    "top3": [
+    "top8": [
       {
         "dist_id": "FD74",
         "label": "3× mix",
@@ -122,6 +122,41 @@
         "label": "3× mix",
         "formation": "3× (Refrigerated, Flatcar, Boxcar)",
         "ci": 0.6975,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD75",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Boxcar, Flatcar)",
+        "ci": 0.6966,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD76",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Boxcar, Gondola)",
+        "ci": 0.696,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD73",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Boxcar, Hopper)",
+        "ci": 0.6949,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD79",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Hopper, Flatcar)",
+        "ci": 0.6922,
+        "cars": 3
+      },
+      {
+        "dist_id": "FD68",
+        "label": "3× mix",
+        "formation": "3× (Refrigerated, Flatcar, Hopper)",
+        "ci": 0.69,
         "cars": 3
       }
     ],
