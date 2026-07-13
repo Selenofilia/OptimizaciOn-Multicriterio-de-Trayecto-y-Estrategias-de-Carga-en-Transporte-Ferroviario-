@@ -1,14 +1,14 @@
 # Diseño experimental factorial 3^k para la validación de TOPSIS-carga
 
-> Documento de trabajo para integrarse al paper *Optimización multicriterio de ruta y estrategias de carga en transporte ferroviario mediante TOPSIS-ruta y TOPSIS-vagones*. Aplica un diseño factorial **3^k** y una extensión factorial mixta para validar los pesos de la capa de carga. Los resultados numéricos se generan de forma reproducible con `scripts/run_factorial_experiment.py` y se resumen en `data/factorial_experiment.json`.
+> Notas de trabajo vinculadas al paper *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México* / *A Two-Layer TOPSIS Framework for Multicriteria Rail Freight Dispatch in Northern Mexico*. Documenta el diseño factorial **3^k** y la extensión mixta 9×3 sobre la capa de carga. Los números se regeneran con `scripts/run_factorial_experiment.py` y quedan en `data/factorial_experiment.json`.
 
 ---
 
 ## 1. Justificación metodológica
 
-En la versión actual del estudio, la robustez del ranking TOPSIS se examina mediante análisis de sensibilidad (±20 % en los pesos) y una prueba de estabilidad por partición (k = 5; leave-subset-out, no validación cruzada predictiva), y se declara explícitamente que "no se formulan hipótesis estadísticas formales" (Metodología, §3). Esto deja un vacío de **rigor inferencial**: no se cuantifica, con una prueba estadística, en qué medida las prioridades del decisor (los pesos de los criterios) afectan la recomendación.
+En el estudio ya se reportaban sensibilidad ±20 % en los pesos y una prueba de estabilidad por partición (k = 5; leave-subset-out, no validación cruzada predictiva). El factorial 3^k cuantifica con ANOVA cómo los pesos de rentabilidad/carga (A), eficiencia operativa (B) y riesgo/penalizaciones (C) desplazan el C_i del líder en Monterrey–Laredo.
 
-El diseño factorial 3^k cierra ese vacío. A diferencia de un diseño 2^k, el uso de **tres niveles** por factor permite estimar, además de los efectos lineales y de interacción, los **efectos de curvatura (cuadráticos)**, necesarios cuando la respuesta no es aproximadamente lineal en el rango estudiado. Dado que los pesos de los criterios son factores de tipo continuo, el diseño 3^k resulta apropiado para validar la sensibilidad estructural del ranking.
+A diferencia de un 2^k, tres niveles por factor permiten estimar curvatura además de efectos lineales e interacciones, lo cual conviene cuando los pesos actúan como multiplicadores ordinales sobre grupos de criterios.
 
 ## 2. Tipo y diseño de investigación
 
@@ -134,12 +134,7 @@ Después del ANOVA, se examinaron los residuos (figura de la §4.3): la gráfica
 
 ## 6. Discusión
 
-1. **Prioridades que sí importan.** El peso de la rentabilidad (A) y de la eficiencia operativa (B) determinan de manera significativa la recomendación, con una interacción A×B dominante: no basta con ajustar un bloque de forma aislada.
-2. **Curvatura.** La significancia de A^2 y B^2 indica que la relación entre estos pesos y C_i no es lineal; existe un régimen de rendimientos cambiantes que solo un diseño de tres niveles puede capturar.
-3. **Prioridades que no mueven la aguja.** En Monterrey–Laredo, el bloque de riesgo/penalizaciones (C) no afecta significativamente al líder dentro del rango explorado, lo que sugiere que el decisor puede concentrar su calibración en A y B.
-4. **Contingencia por corredor.** El factorial mixto formaliza, con una prueba estadística, la conclusión del paper de que el líder depende del par O-D.
-
-
+En Monterrey–Laredo, A y B mueven de forma significativa al líder y la interacción AB domina la suma de cuadrados: conviene calibrar rentabilidad/carga y eficiencia en conjunto. Los términos cuadráticos A² y B² significativos confirman curvatura en ese rango. El bloque C no fue significativo aquí. El factorial mixto 9×3 refuerza que la respuesta depende del par O-D, en línea con los rankings del corredor norte del paper.
 
 ## 7. Limitaciones
 
@@ -152,17 +147,9 @@ Después del ANOVA, se examinaron los residuos (figura de la §4.3): la gráfica
 
 
 
-## 8. Integración al paper oficial
+## 8. Uso en el paper
 
-
-| Sección del paper                                 | Aporte de este documento                                                                                                                                     |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **§3.1 Tipo, nivel y diseño** (actualmente vacío) | Declarar el diseño factorial 3^3 de efectos fijos con réplicas y ajustar la afirmación de que "no se formulan hipótesis": ahora sí se formulan y contrastan. |
-| **§3.6 Plan de análisis de datos**                | Añadir el ANOVA con descomposición lineal/cuadrática e interacciones, y la verificación de supuestos.                                                        |
-| **§4 Resultados** (nueva subsección, p. ej. §4.7) | Incluir las tablas ANOVA (§4.1–4.2), las figuras (§4.3) y el factorial mixto (§4.4).                                                                         |
-| **§5 Discusión**                                  | Incorporar los cuatro puntos de la §6.                                                                                                                       |
-| **Referencias**                                   | No requiere referencias nuevas; el diseño se reporta como procedimiento metodológico propio del estudio.                                                     |
-
+Las tablas y figuras de las §4.1–4.4 alimentan la Metodología (diseño 3³), los Resultados (ANOVA y factorial mixto) y la Discusión del manuscrito Springer. Este archivo conserva el detalle de contrastes y supuestos que no cabe en el proceedings.
 
 ---
 

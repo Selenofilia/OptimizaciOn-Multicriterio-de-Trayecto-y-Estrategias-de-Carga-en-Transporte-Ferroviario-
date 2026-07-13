@@ -519,7 +519,10 @@ def main() -> None:
 
     agree, cv_top = cv_k5_distribution(mty["candidates"], dw)
     mty["cv_concordance"] = agree
-    print(f"CV k=5 (particiones determinísticas por dist_id): {agree}/5")
+    print(
+        f"Estabilidad por partición k=5 (particiones determinísticas por dist_id): "
+        f"{agree}/5"
+    )
 
     out = ROOT / "data" / "paper_results.json"
     export_results_json(out, north_rows, mty)

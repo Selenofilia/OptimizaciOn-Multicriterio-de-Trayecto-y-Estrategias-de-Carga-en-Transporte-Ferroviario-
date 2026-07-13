@@ -1,41 +1,12 @@
 # Herramienta MCDM ferroviaria TOPSIS bicapa — norte de México
 
-Repositorio de apoyo reproducible a los artículos:
+Material de apoyo a *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México* y a *A Two-Layer TOPSIS Framework for Multicriteria Rail Freight Dispatch in Northern Mexico* (versión `v1.0-paper`, ver `VERSION`).
 
-- *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México* (español)
-- *A Two-Layer TOPSIS Framework for Multicriteria Rail Freight Dispatch in Northern Mexico* (inglés)
+Aquí publicamos la herramienta web autónoma en español e inglés, los JSON de la red ferroviaria y las estrategias de carga, las salidas del corredor norte (rankings, sensibilidad ±20 %, estabilidad k = 5) y el ANOVA factorial 3³ con su extensión mixta 9×3. Los scripts `run_topsis_analysis.py` y `run_factorial_experiment.py` regeneran esos resultados a partir del mismo núcleo de 587 estrategias que usa el artículo; el archivo `dataset.json` amplía la exploración interactiva a 4235 registros. El manuscrito Springer y las figuras PNG incrustadas en el proceedings no se distribuyen aquí.
 
-**Versión:** `v1.0-paper` (ver `VERSION`).
+Para usar la herramienta, abra `TOPSIS-Bicapa-Ferroviario-MCDM.html` o `TOPSIS-Bicapa-Rail-MCDM.html` en Chrome, Edge o Firefox (modo Guía rápida / Quick guide o Análisis completo / Full analysis). No hace falta servidor backend; los mapas base de OpenStreetMap sí requieren conexión a internet.
 
-Este repositorio incluye **solo** lo necesario para replicar la herramienta interactiva y los **resultados numéricos** citados en el paper. **No** contiene el manuscrito Springer (Word/LaTeX), figuras PNG embebidas en el artículo ni scripts de maquetación editorial.
-
-## Contenido incluido
-
-| Ruta | Descripción |
-|------|-------------|
-| `TOPSIS-Bicapa-Ferroviario-MCDM.html` | Herramienta MCDM autónoma (español) |
-| `TOPSIS-Bicapa-Rail-MCDM.html` | Misma herramienta (inglés) |
-| `data/cities.json` | Red ferroviaria modelada (25 estaciones) |
-| `data/wagon_map.json` | Slots visuales de material rodante |
-| `data/dataset.json` | 4235 estrategias (587 núcleo analítico del artículo) |
-| `data/paper_results.json` | Rankings del corredor, sensibilidad ±20 %, estabilidad k = 5 |
-| `data/factorial_experiment.json` | ANOVA 3³ y factorial mixto 9×3 |
-| `data/factorial_experiment.csv` | 135 corridas del diseño factorial |
-| `scripts/run_topsis_analysis.py` | Regenera `paper_results.json` |
-| `scripts/run_factorial_experiment.py` | Regenera salidas factorial |
-| `docs/diseno_experimental_3k.md` | Protocolo factorial 3^k |
-| `assets/vendor/leaflet/` | Mapa interactivo offline |
-| `assets/wagon_catalog.json`, `assets/wagon_sprites.json` | Catálogo gráfico de vagones |
-
-## Uso de la herramienta MCDM
-
-1. Clonar o descargar este repositorio.
-2. Abrir **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** o **`TOPSIS-Bicapa-Rail-MCDM.html`** en Chrome, Edge o Firefox.
-3. Elegir **Guía rápida** / **Quick guide** o **Análisis completo** / **Full analysis**.
-
-La herramienta no requiere servidor backend. Los tiles de OpenStreetMap sí requieren internet.
-
-## Reproducibilidad numérica
+Para repetir los análisis numéricos del paper:
 
 ```bash
 pip install -r requirements.txt
@@ -43,21 +14,7 @@ python scripts/run_topsis_analysis.py
 python scripts/run_factorial_experiment.py
 ```
 
-| Resultado en el artículo | Artefacto en este repo |
-|---------------------------|-------------------------|
-| Red y restricciones (Sección 2) | `data/cities.json`, HTML MCDM |
-| Tabla 4 / Fig. 2 (rankings corredor) | `data/paper_results.json` |
-| Tabla 5 (Top-5 Monterrey–Laredo) | HTML MCDM + `data/paper_results.json` |
-| Sensibilidad ±20 %, k = 5 | `data/paper_results.json` |
-| Tabla 6 / Fig. 4 (ANOVA 3³) | `data/factorial_experiment.json` |
-| Protocolo factorial | `docs/diseno_experimental_3k.md` |
-
-## Qué no incluye este repositorio
-
-- Manuscrito `.docx` / fuentes LaTeX del proceedings Springer
-- Figuras estáticas (PNG) incrustadas en el paper
-- Scripts de generación Word/LaTeX, capturas de pantalla o verificación editorial
-- Excel comercial fuente (`dataset_exact_materials.xlsx`)
+El diseño factorial está descrito en `docs/diseno_experimental_3k.md`. Los JSON principales son `data/cities.json`, `data/wagon_map.json`, `data/dataset.json`, `data/paper_results.json` y `data/factorial_experiment.json`.
 
 ## Cómo citar
 
