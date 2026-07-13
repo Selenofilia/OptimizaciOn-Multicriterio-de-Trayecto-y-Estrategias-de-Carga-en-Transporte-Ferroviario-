@@ -1,39 +1,41 @@
 # Herramienta MCDM ferroviaria TOPSIS bicapa — norte de México
 
-Repositorio de apoyo al artículo *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México*.
+Repositorio de apoyo reproducible a los artículos:
 
-El artefacto principal es **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** (español) o **`TOPSIS-Bicapa-Rail-MCDM.html`** (inglés): una aplicación web autónoma que implementa el marco TOPSIS bicapa (capa de ruteo con Dijkstra y capa de carga sobre formaciones de 1 a 6 vagones) sobre una red ferroviaria de 25 estaciones en Chihuahua, Sonora, Coahuila y Nuevo León, con conexión a Laredo.
+- *Marco TOPSIS Bicapa para Despacho Ferroviario Multicriterio en el Corredor Norte de México* (español)
+- *A Two-Layer TOPSIS Framework for Multicriteria Rail Freight Dispatch in Northern Mexico* (inglés)
 
-## Artefacto principal
+**Versión:** `v1.0-paper` (ver `VERSION`).
 
-| Componente | Descripción |
-|------------|-------------|
-| `TOPSIS-Bicapa-Ferroviario-MCDM.html` | Herramienta MCDM interactiva (español): selección origen–destino, ranking de trayectos, pre-filtro interno, ranking de formaciones, validación MOORA, sensibilidad de pesos y despacho animado |
-| `TOPSIS-Bicapa-Rail-MCDM.html` | Misma herramienta en inglés (*Two-Layer TOPSIS Rail MCDM Tool — Northern Mexico freight corridor*) |
-| `assets/` | Recursos gráficos (Leaflet, catálogo y sprites de material rodante) |
-| `data/cities.json` | Topología de la red ferroviaria modelada |
-| `data/dataset.json` | Estrategias de carga embebidas (4235 registros; 587 núcleo del artículo) |
+Este repositorio incluye **solo** lo necesario para replicar la herramienta interactiva y los **resultados numéricos** citados en el paper. **No** contiene el manuscrito Springer (Word/LaTeX), figuras PNG embebidas en el artículo ni scripts de maquetación editorial.
 
-### Uso
+## Contenido incluido
+
+| Ruta | Descripción |
+|------|-------------|
+| `TOPSIS-Bicapa-Ferroviario-MCDM.html` | Herramienta MCDM autónoma (español) |
+| `TOPSIS-Bicapa-Rail-MCDM.html` | Misma herramienta (inglés) |
+| `data/cities.json` | Red ferroviaria modelada (25 estaciones) |
+| `data/wagon_map.json` | Slots visuales de material rodante |
+| `data/dataset.json` | 4235 estrategias (587 núcleo analítico del artículo) |
+| `data/paper_results.json` | Rankings del corredor, sensibilidad ±20 %, estabilidad k = 5 |
+| `data/factorial_experiment.json` | ANOVA 3³ y factorial mixto 9×3 |
+| `data/factorial_experiment.csv` | 135 corridas del diseño factorial |
+| `scripts/run_topsis_analysis.py` | Regenera `paper_results.json` |
+| `scripts/run_factorial_experiment.py` | Regenera salidas factorial |
+| `docs/diseno_experimental_3k.md` | Protocolo factorial 3^k |
+| `assets/vendor/leaflet/` | Mapa interactivo offline |
+| `assets/wagon_catalog.json`, `assets/wagon_sprites.json` | Catálogo gráfico de vagones |
+
+## Uso de la herramienta MCDM
 
 1. Clonar o descargar este repositorio.
-2. Abrir **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** (español) o **`TOPSIS-Bicapa-Rail-MCDM.html`** (inglés) en Chrome, Edge o Firefox.
-3. Seleccionar modo **Guía rápida** / **Quick guide** (flujo operativo) o **Análisis completo** / **Full analysis** (controles metodológicos y validación).
+2. Abrir **`TOPSIS-Bicapa-Ferroviario-MCDM.html`** o **`TOPSIS-Bicapa-Rail-MCDM.html`** en Chrome, Edge o Firefox.
+3. Elegir **Guía rápida** / **Quick guide** o **Análisis completo** / **Full analysis**.
 
-La herramienta opera sin servidor backend. Los mapas base (OpenStreetMap) requieren conexión a internet.
+La herramienta no requiere servidor backend. Los tiles de OpenStreetMap sí requieren internet.
 
-## Materiales de apoyo al artículo
-
-| Archivo | Función |
-|---------|---------|
-| `docs/diseno_experimental_3k.md` | Diseño factorial 3³ sobre la capa de carga |
-| `data/paper_results.json` | Rankings del corredor norte, sensibilidad ±20 % y prueba de estabilidad por partición (k = 5) |
-| `data/factorial_experiment.json` | Tablas ANOVA factorial 3³ y factorial mixto 9×3 |
-| `data/factorial_experiment.csv` | Corridas del experimento factorial (135 observaciones) |
-
-## Reproducibilidad de resultados
-
-Los scripts en `scripts/` replican los análisis numéricos reportados en el artículo:
+## Reproducibilidad numérica
 
 ```bash
 pip install -r requirements.txt
@@ -41,13 +43,21 @@ python scripts/run_topsis_analysis.py
 python scripts/run_factorial_experiment.py
 ```
 
-| Sección del artículo | Artefacto |
-|----------------------|-----------|
-| Red modelada (Sección 2; `data/cities.json`) | `data/cities.json` |
-| Rankings por par O-D (Tabla 4, Fig. 2) | `data/paper_results.json` |
-| Sensibilidad y estabilidad por partición (Tablas 5–6) | `data/paper_results.json` |
-| ANOVA factorial 3³ (Tabla 6, Figs. 3–4) | `data/factorial_experiment.json` |
-| Diseño experimental | `docs/diseno_experimental_3k.md` |
+| Resultado en el artículo | Artefacto en este repo |
+|---------------------------|-------------------------|
+| Red y restricciones (Sección 2) | `data/cities.json`, HTML MCDM |
+| Tabla 4 / Fig. 2 (rankings corredor) | `data/paper_results.json` |
+| Tabla 5 (Top-5 Monterrey–Laredo) | HTML MCDM + `data/paper_results.json` |
+| Sensibilidad ±20 %, k = 5 | `data/paper_results.json` |
+| Tabla 6 / Fig. 4 (ANOVA 3³) | `data/factorial_experiment.json` |
+| Protocolo factorial | `docs/diseno_experimental_3k.md` |
+
+## Qué no incluye este repositorio
+
+- Manuscrito `.docx` / fuentes LaTeX del proceedings Springer
+- Figuras estáticas (PNG) incrustadas en el paper
+- Scripts de generación Word/LaTeX, capturas de pantalla o verificación editorial
+- Excel comercial fuente (`dataset_exact_materials.xlsx`)
 
 ## Cómo citar
 
@@ -63,8 +73,8 @@ python scripts/run_factorial_experiment.py
 
 ## Autores
 
-- Abraham Isaac Colchero García — Universidad Autónoma de Guerrero
-- José Guadalupe De la Torre Suárez — Universidad Autónoma de Guerrero
+- Abraham Isaac Colchero García — Facultad de Matemáticas Nodo Acapulco, UAGRO
+- José Guadalupe De la Torre Suárez — Facultad de Matemáticas Nodo Acapulco, UAGRO
 - Alberto Ochoa Zezzatti — Universidad Autónoma de Ciudad Juárez
 
 ## Licencia

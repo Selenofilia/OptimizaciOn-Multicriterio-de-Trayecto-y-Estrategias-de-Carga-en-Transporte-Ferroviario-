@@ -14,8 +14,7 @@
       40,
       163,
       114
-    ],
-    "nombre": "Furgón de cola o de pasajeros (beige): Transporta: Personal del tren, maquinistas, herramientas de maniobra o pasajeros."
+    ]
   },
   {
     "id": 2,
@@ -33,8 +32,7 @@
       45,
       317,
       114
-    ],
-    "nombre": "Locomotora diésel (amarilla): Transporta: No lleva carga; provee la fuerza de tracción para arrastrar el tren."
+    ]
   },
   {
     "id": 3,
@@ -52,8 +50,7 @@
       39,
       472,
       114
-    ],
-    "nombre": "Locomotora diésel (roja): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 4,
@@ -71,8 +68,7 @@
       38,
       634,
       114
-    ],
-    "nombre": "Locomotora diésel (azul): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 5,
@@ -90,8 +86,7 @@
       39,
       806,
       114
-    ],
-    "nombre": "Locomotora diésel (verde): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 6,
@@ -109,8 +104,7 @@
       40,
       1009,
       114
-    ],
-    "nombre": "Locomotora de alta velocidad (amarilla): Transporta: Pasajeros y equipaje ligero."
+    ]
   },
   {
     "id": 7,
@@ -127,8 +121,7 @@
       159,
       156,
       225
-    ],
-    "nombre": "Furgón cerrado (marrón): Transporta: Carga general protegida del clima (cajas, palés, electrodomésticos, alimentos envasados o repuestos)."
+    ]
   },
   {
     "id": 8,
@@ -145,8 +138,7 @@
       156,
       284,
       225
-    ],
-    "nombre": "Vagón tolva (azul grisáceo): Transporta: Graneles secos que se descargan por debajo (granos, cereales, fertilizantes, cemento)."
+    ]
   },
   {
     "id": 9,
@@ -163,8 +155,7 @@
       154,
       428,
       225
-    ],
-    "nombre": "Furgón cerrado (verde claro): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 10,
@@ -181,8 +172,7 @@
       166,
       640,
       225
-    ],
-    "nombre": "Vagón góndola / jaula larga (azul verdoso): Transporta: Carga a granel o voluminosa sin techo (minerales, chatarra, madera o vehículos en jaula)."
+    ]
   },
   {
     "id": 11,
@@ -199,8 +189,7 @@
       157,
       800,
       221
-    ],
-    "nombre": "Furgón cerrado (morado oscuro): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 12,
@@ -217,8 +206,7 @@
       144,
       1007,
       225
-    ],
-    "nombre": "Vagón plataforma con teleros/estacas (azul): Transporta: Cargas largas y rígidas que necesitan contención lateral (tubos de acero, vigas, rieles, madera)."
+    ]
   },
   {
     "id": 13,
@@ -235,8 +223,7 @@
       268,
       183,
       348
-    ],
-    "nombre": "Furgón cerrado (rojo): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 14,
@@ -253,8 +240,7 @@
       254,
       387,
       348
-    ],
-    "nombre": "Vagón cisterna / tanque (azul oscuro): Transporta: Líquidos o gases a presión (agua, combustibles, químicos, gas licuado, aceite)."
+    ]
   },
   {
     "id": 15,
@@ -271,8 +257,7 @@
       268,
       576,
       348
-    ],
-    "nombre": "Furgón cerrado (gris claro): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 16,
@@ -289,8 +274,7 @@
       267,
       774,
       348
-    ],
-    "nombre": "Furgón cerrado (azul oscuro acanalado): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 17,
@@ -307,8 +291,7 @@
       266,
       1007,
       348
-    ],
-    "nombre": "Vagón portacontenedores (con cargas): Transporta: Mercancía general agrupada dentro de contenedores estándar de transporte intermodal."
+    ]
   },
   {
     "id": 18,
@@ -325,8 +308,7 @@
       380,
       198,
       470
-    ],
-    "nombre": "Vagón tolva (azul): Transporta: Graneles secos (arena, grava, cereales)."
+    ]
   },
   {
     "id": 19,
@@ -343,8 +325,7 @@
       406,
       399,
       470
-    ],
-    "nombre": "Vagón plataforma / góndola vacía (gris): Transporta: Maquinaria pesada, vehículos, tractores o piezas industriales de gran tamaño."
+    ]
   },
   {
     "id": 20,
@@ -361,8 +342,7 @@
       394,
       603,
       470
-    ],
-    "nombre": "Vagón maderero (con troncos): Transporta: Troncos de árboles enteros o madera gruesa aserrada."
+    ]
   },
   {
     "id": 21,
@@ -379,8 +359,7 @@
       387,
       819,
       470
-    ],
-    "nombre": "Furgón cerrado (fucsia / morado claro): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 22,
@@ -397,8 +376,7 @@
       378,
       1007,
       470
-    ],
-    "nombre": "Vagón cisterna (amarillo pálido): Transporta: Líquidos o gases a presión."
+    ]
   },
   {
     "id": 23,
@@ -415,8 +393,7 @@
       502,
       211,
       590
-    ],
-    "nombre": "Vagón cisterna (azul con franjas): Transporta: Líquidos o gases a presión."
+    ]
   },
   {
     "id": 24,
@@ -433,8 +410,7 @@
       499,
       402,
       590
-    ],
-    "nombre": "Vagón góndola (con carga negra): Transporta: Graneles pesados que no temen a la intemperie (carbón, mineral de hierro, balasto, chatarra)."
+    ]
   },
   {
     "id": 25,
@@ -451,8 +427,7 @@
       552,
       603,
       590
-    ],
-    "nombre": "Vagón plataforma vacío (verde claro): Transporta: Maquinaria, bobinas de acero o materiales de construcción grandes."
+    ]
   },
   {
     "id": 26,
@@ -469,8 +444,7 @@
       501,
       786,
       590
-    ],
-    "nombre": "Vagón tolva (naranja claro / beige): Transporta: Graneles secos."
+    ]
   },
   {
     "id": 27,
@@ -487,8 +461,7 @@
       504,
       1007,
       590
-    ],
-    "nombre": "Furgón cerrado (verde): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 28,
@@ -505,8 +478,7 @@
       620,
       204,
       706
-    ],
-    "nombre": "Furgón cerrado (gris oscuro): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 29,
@@ -523,8 +495,7 @@
       620,
       396,
       706
-    ],
-    "nombre": "Furgón cerrado (burdeos): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 30,
@@ -541,8 +512,7 @@
       617,
       622,
       706
-    ],
-    "nombre": "Vagón tolva (amarillo): Transporta: Graneles secos."
+    ]
   },
   {
     "id": 31,
@@ -559,8 +529,7 @@
       623,
       821,
       706
-    ],
-    "nombre": "Vagón cisterna (rojo oscuro): Transporta: Líquidos o gases a presión."
+    ]
   },
   {
     "id": 32,
@@ -577,8 +546,7 @@
       622,
       1008,
       706
-    ],
-    "nombre": "Furgón cerrado (beige): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 33,
@@ -596,8 +564,7 @@
       9,
       261,
       90
-    ],
-    "nombre": "Locomotora diésel (roja y amarilla): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 34,
@@ -614,8 +581,7 @@
       10,
       522,
       90
-    ],
-    "nombre": "Vagón góndola (con carga negra): Transporta: Carbón, mineral, arena gruesa o chatarra expuesta al clima."
+    ]
   },
   {
     "id": 35,
@@ -633,8 +599,7 @@
       11,
       788,
       90
-    ],
-    "nombre": "Locomotora diésel (gris y blanca): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 36,
@@ -651,8 +616,7 @@
       2,
       991,
       90
-    ],
-    "nombre": "Vagón cisterna (naranja con franja roja): Transporta: Líquidos inflamables, químicos corrosivos o combustibles."
+    ]
   },
   {
     "id": 37,
@@ -669,8 +633,7 @@
       111,
       172,
       185
-    ],
-    "nombre": "Vagón cisterna (azul claro): Transporta: Líquidos o gases a presión."
+    ]
   },
   {
     "id": 38,
@@ -687,8 +650,7 @@
       104,
       338,
       185
-    ],
-    "nombre": "Furgón cerrado (burdeos, puerta abierta): Transporta: Carga general paletizada (fácil de cargar y descargar con montacargas)."
+    ]
   },
   {
     "id": 39,
@@ -705,8 +667,7 @@
       106,
       520,
       185
-    ],
-    "nombre": "Vagón tolva (blanco / gris claro): Transporta: Graneles que requieren protección total contra el agua (cemento en polvo, harina, granos finos)."
+    ]
   },
   {
     "id": 40,
@@ -723,8 +684,7 @@
       108,
       687,
       185
-    ],
-    "nombre": "Vagón plataforma (con depósitos esféricos): Transporta: Gases licuados, refrigerantes o químicos especializados de alta presión."
+    ]
   },
   {
     "id": 41,
@@ -742,8 +702,7 @@
       102,
       845,
       185
-    ],
-    "nombre": "Tren de alta velocidad (azul): Transporta: Pasajeros de larga o media distancia."
+    ]
   },
   {
     "id": 42,
@@ -761,8 +720,7 @@
       201,
       301,
       280
-    ],
-    "nombre": "Locomotora diésel / eléctrica (roja y amarilla): Transporta: Fuerza de tracción."
+    ]
   },
   {
     "id": 43,
@@ -779,8 +737,7 @@
       212,
       474,
       280
-    ],
-    "nombre": "Vagón plataforma de chasis descubierto (azul claro): Transporta: Contenedores intermodales de carga o estructuras indivisibles muy pesadas."
+    ]
   },
   {
     "id": 44,
@@ -797,8 +754,7 @@
       206,
       652,
       280
-    ],
-    "nombre": "Vagón plataforma con teleros (gris): Transporta: Madera, tubos largos, vigas de construcción."
+    ]
   },
   {
     "id": 45,
@@ -815,8 +771,7 @@
       201,
       828,
       280
-    ],
-    "nombre": "Furgón cerrado (morado): Transporta: Carga general protegida del clima."
+    ]
   },
   {
     "id": 46,
@@ -833,8 +788,7 @@
       197,
       1012,
       280
-    ],
-    "nombre": "Vagón tolva (gris claro): Transporta: Graneles secos."
+    ]
   },
   {
     "id": 47,
@@ -851,8 +805,7 @@
       309,
       170,
       385
-    ],
-    "nombre": "Vagón tolva (estructura visible): Transporta: Materiales a granel muy pesados, típicamente rocas, grava o balasto para las propias vías férreas."
+    ]
   },
   {
     "id": 48,
@@ -869,8 +822,7 @@
       295,
       344,
       385
-    ],
-    "nombre": "Vagón grúa: Transporta: No lleva carga comercial; transporta su propio equipo de elevación para realizar mantenimientos, mover rieles pesados o asistir en accidentes."
+    ]
   },
   {
     "id": 49,
@@ -887,8 +839,7 @@
       313,
       515,
       386
-    ],
-    "nombre": "Vagón góndola (con carga negra): Transporta: Carbón o minerales sin protección climática."
+    ]
   },
   {
     "id": 50,
@@ -905,8 +856,7 @@
       307,
       769,
       385
-    ],
-    "nombre": "Vagón cisterna (gris claro): Transporta: Líquidos o gases a presión."
+    ]
   },
   {
     "id": 51,
@@ -924,7 +874,6 @@
       305,
       1024,
       386
-    ],
-    "nombre": "Locomotora diésel (naranja y amarilla): Transporta: Fuerza de tracción."
+    ]
   }
 ]
