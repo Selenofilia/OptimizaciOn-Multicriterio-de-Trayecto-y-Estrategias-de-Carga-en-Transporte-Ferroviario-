@@ -162,6 +162,6 @@
     ],
     "n_candidates": 80,
     "sensitivity_stability": 0.95,
-    "cv_concordance": 4
+    "partition_stability_k5": 4
   }
 }

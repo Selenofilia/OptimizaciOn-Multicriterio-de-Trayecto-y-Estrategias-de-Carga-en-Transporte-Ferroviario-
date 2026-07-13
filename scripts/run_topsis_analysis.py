@@ -414,7 +414,7 @@ def sensitivity_distribution(candidates: list[dict], base_weights: list[float]) 
     return 1 - changed / total, baseline
 
 
-def cv_k5_distribution(candidates: list[dict], weights: list[float]) -> tuple[int, str | None]:
+def partition_stability_k5(candidates: list[dict], weights: list[float]) -> tuple[int, str | None]:
     k = 5
     if len(candidates) < k:
         return 0, None
@@ -473,7 +473,7 @@ def export_results_json(path: Path, north_rows: list[dict], mty: dict) -> None:
             ],
             "n_candidates": mty["n_candidates"],
             "sensitivity_stability": mty.get("sensitivity_stability"),
-            "cv_concordance": mty.get("cv_concordance"),
+            "partition_stability_k5": mty.get("partition_stability_k5"),
         },
     }
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -517,8 +517,8 @@ def main() -> None:
     mty["sensitivity_stability"] = stab
     print(f"\nSensibilidad capa de carga (±20%): estabilidad={stab:.2f} líder={baseline}")
 
-    agree, cv_top = cv_k5_distribution(mty["candidates"], dw)
-    mty["cv_concordance"] = agree
+    agree, part_top = partition_stability_k5(mty["candidates"], dw)
+    mty["partition_stability_k5"] = agree
     print(
         f"Estabilidad por partición k=5 (particiones determinísticas por dist_id): "
         f"{agree}/5"

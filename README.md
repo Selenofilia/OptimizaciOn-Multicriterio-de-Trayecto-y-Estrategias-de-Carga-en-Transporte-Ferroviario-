@@ -14,6 +14,8 @@ python scripts/run_topsis_analysis.py
 python scripts/run_factorial_experiment.py
 ```
 
+La prueba de estabilidad por partición (k = 5) en `run_topsis_analysis.py` es determinística (particiones fijas por `dist_id`; no usa semillas). El experimento factorial 3³ sí emplea submuestreo aleatorio con semilla fija `BASE_SEED = 20260703` en `run_factorial_experiment.py`, detallada en `docs/diseno_experimental_3k.md`.
+
 El diseño factorial está descrito en `docs/diseno_experimental_3k.md`. Los JSON principales son `data/cities.json`, `data/wagon_map.json`, `data/dataset.json`, `data/paper_results.json` y `data/factorial_experiment.json`.
 
 ## Cómo citar
